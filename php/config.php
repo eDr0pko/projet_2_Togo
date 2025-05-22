@@ -1,6 +1,6 @@
 <?php
     $host = 'localhost';
-    $dbname = 'pharmacol_db';
+    $dbname = '2n_multi_service';
     $user = 'root';
     $pass = '';
 
@@ -11,3 +11,5 @@
         die("Erreur de connexion : " . $e->getMessage());
     }
 ?>
+
+
