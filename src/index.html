@@ -32,8 +32,8 @@
                <nav>
                   <ul class="flex flex-row justify-center items-center gap-15 text-white text-3xl font-semibold">
                      <li><a href="#home" class=" hover:text-blue-700 transition-colors duration-500">Home</a></li>
-                     <li><a href="#about" class=" hover:text-blue-700 transition-colors duration-500">About</a></li>
                      <li><a href="#services" class=" hover:text-blue-700 transition-colors duration-500">Services</a></li>
+                     <li><a href="#recrutement" class=" hover:text-blue-700 transition-colors duration-500">Recrutement</a></li>
                      <li><a href="#contact" class=" hover:text-blue-700 transition-colors duration-500">Contact</a></li>
                   </ul>
                </nav>
@@ -171,10 +171,10 @@
 
 
       <section class=" py-16">
-         <div class="max-w-full mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
+         <div class="max-w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
             
             <!-- Carte 1 -->
-            <a href="" class="relative group h-[500px] rounded overflow-hidden shadow-lg">
+            <a href="" class="relative group h-[500px] overflow-hidden shadow-lg">
 
                <!-- Image zoomable -->
                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -191,7 +191,7 @@
             </a>
 
             <!-- Carte 2 -->
-            <a href="" class="relative group h-[500px] rounded overflow-hidden shadow-lg">
+            <a href="" class="relative group h-[500px] overflow-hidden shadow-lg">
 
                <!-- Image zoomable -->
                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -208,7 +208,7 @@
             </a>
 
             <!-- Carte 3 -->
-            <a href="" class="relative group h-[500px] rounded overflow-hidden shadow-lg">
+            <a href="" class="relative group h-[500px] overflow-hidden shadow-lg">
 
                <!-- Image zoomable -->
                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -225,7 +225,7 @@
             </a>
 
             <!-- Carte 4 -->
-            <a href="" class="relative group h-[500px] rounded overflow-hidden shadow-lg">
+            <a href="" class="relative group h-[500px] overflow-hidden shadow-lg">
 
                <!-- Image zoomable -->
                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -244,6 +244,103 @@
          </div>
 
       </section>
+
+
+
+      <section class="max-w-4xl mx-auto px-6 py-12">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Questions Fréquentes</h2>
+
+      <div class="space-y-4" id="faq">
+         <!-- FAQ Item -->
+         <div class="bg-white border border-gray-300 rounded-lg shadow overflow-hidden">
+            <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(0)">
+            <span class="text-lg font-medium text-gray-800">Quels types de sites pouvez-vous sécuriser ?</span>
+            <svg class="w-5 h-5 transition-transform duration-500 transform" id="arrow-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+            </button>
+            <div id="answer-0" class="faq-answer px-6 text-gray-600 max-h-0 overflow-hidden opacity-0 transition-all duration-[800ms] ease-in-out">
+            <p class="py-4">
+               Nous intervenons sur une grande variété de sites : bureaux, entrepôts, chantiers, hôtels, résidences, hôpitaux, événements, etc.
+            </p>
+            </div>
+         </div>
+
+         <!-- Répète pour chaque FAQ -->
+         <div class="bg-white border border-gray-300 rounded-lg shadow overflow-hidden">
+            <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(1)">
+            <span class="text-lg font-medium text-gray-800">Vos agents sont-ils formés ?</span>
+            <svg class="w-5 h-5 transition-transform duration-500 transform" id="arrow-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+            </button>
+            <div id="answer-1" class="faq-answer px-6 text-gray-600 max-h-0 overflow-hidden opacity-0 transition-all duration-[800ms] ease-in-out">
+            <p class="py-4">
+               Oui, tous nos agents sont rigoureusement formés selon des standards internationaux. Ils sont préparés à réagir efficacement en cas d'urgence.
+            </p>
+            </div>
+         </div>
+
+         <div class="bg-white border border-gray-300 rounded-lg shadow overflow-hidden">
+            <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(2)">
+            <span class="text-lg font-medium text-gray-800">Proposez-vous des services de sécurité avec chiens ?</span>
+            <svg class="w-5 h-5 transition-transform duration-500 transform" id="arrow-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+            </button>
+            <div id="answer-2" class="faq-answer px-6 text-gray-600 max-h-0 overflow-hidden opacity-0 transition-all duration-[800ms] ease-in-out">
+            <p class="py-4">
+               Oui. Nos équipes cynophiles sont composées de maîtres-chiens professionnels et de chiens dressés pour sécuriser les sites sensibles, étendus ou isolés.
+            </p>
+            </div>
+         </div>
+
+         <div class="bg-white border border-gray-300 rounded-lg shadow overflow-hidden">
+            <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(3)">
+            <span class="text-lg font-medium text-gray-800">Intervenez-vous aussi dans le nettoyage ?</span>
+            <svg class="w-5 h-5 transition-transform duration-500 transform" id="arrow-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+            </button>
+            <div id="answer-3" class="faq-answer px-6 text-gray-600 max-h-0 overflow-hidden opacity-0 transition-all duration-[800ms] ease-in-out">
+            <p class="py-4">
+               Oui. Nous proposons des services de nettoyage professionnel, industriel, de désinfection et de traitement anti-nuisibles.
+            </p>
+            </div>
+         </div>
+
+         <div class="bg-white border border-gray-300 rounded-lg shadow overflow-hidden">
+            <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(4)">
+            <span class="text-lg font-medium text-gray-800">Vos systèmes sont-ils conformes aux normes ?</span>
+            <svg class="w-5 h-5 transition-transform duration-500 transform" id="arrow-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+            </button>
+            <div id="answer-4" class="faq-answer px-6 text-gray-600 max-h-0 overflow-hidden opacity-0 transition-all duration-[800ms] ease-in-out">
+            <p class="py-4">
+               Oui, toutes nos prestations respectent les normes nationales et internationales. Nous assurons une veille réglementaire permanente.
+            </p>
+            </div>
+         </div>
+      </div>
+      </section>
+      <script>
+      function toggleFAQ(index) {
+         const answer = document.getElementById('answer-' + index);
+         const arrow = document.getElementById('arrow-' + index);
+
+         if (answer.classList.contains('max-h-0')) {
+            answer.classList.remove('max-h-0', 'opacity-0');
+            answer.classList.add('max-h-96', 'opacity-100');
+            arrow.classList.add('rotate-180');
+         } else {
+            answer.classList.add('max-h-0', 'opacity-0');
+            answer.classList.remove('max-h-96', 'opacity-100');
+            arrow.classList.remove('rotate-180');
+         }
+      }
+      </script>
+
 
       <!-- Footer -->
       <footer class="bg-gray-900 text-white mt-20">
