@@ -9,12 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 listeOffres.innerHTML = '';
                 data.forEach(offre => {
                     const div = document.createElement('div');
-                    div.className = 'bg-white p-4 rounded shadow';
+                    div.className = 'bg-white rounded-xl shadow-md p-6 flex flex-col justify-between border border-gray-200 hover:shadow-lg transition';
                     div.innerHTML = `
-                        <h3 class="text-xl font-semibold">${offre.titre}</h3>
-                        <p class="mb-2">${offre.description}</p>
-                        <button onclick="supprimerOffre(${offre.id})" class="text-red-500 hover:underline mr-4">Supprimer</button>
-                        <button onclick='modifierOffre(${JSON.stringify(offre)})' class="text-blue-500 hover:underline">Modifier</button>
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-2">${offre.titre}</h3>
+                        <p class="text-gray-700 mb-4">${offre.description}</p>
+                        <div class="flex justify-end space-x-4">
+                            <button onclick="supprimerOffre(${offre.id})"
+                                class="px-4 py-2 bg-red-100 text-red-600 hover:bg-red-200 rounded-md text-sm font-medium transition">
+                                <i class="fa-solid fa-trash mr-1"></i> Supprimer
+                            </button>
+                            <button onclick='modifierOffre(${JSON.stringify(offre)})'
+                                class="px-4 py-2 bg-blue-100 text-blue-700 hover:bg-blue-200 rounded-md text-sm font-medium transition">
+                                <i class="fa-solid fa-pen mr-1"></i> Modifier
+                            </button>
+                        </div>
                     `;
                     listeOffres.appendChild(div);
                 });
@@ -56,3 +64,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     chargerOffres();
 });
+
+

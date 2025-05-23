@@ -2,7 +2,7 @@
   "name": "projet_2_togo",
   "version": "1.0.0",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "tailwindcss -i backend/resources/css/input.css -o backend/public/src/output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.7",
