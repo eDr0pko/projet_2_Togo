@@ -21,8 +21,8 @@
                 <div class="flex items-center space-x-4">
                     <img src="{{ asset('images/LOGO 2N MULTI SERVICES.png') }}" alt="Logo 2N" class="h-14 w-auto rounded bg-white p-1 shadow-inner">
                     <div>
-                        <h1 class="text-3xl font-bold">2N MULTI SERVICE</h1>
-                        <p class="text-sm text-blue-100">Gestion des offres d'emploi</p>
+                        <h1 class="text-4xl font-bold">2N MULTI SERVICE</h1>
+                        <p class="text-m text-blue-100">Gestion des offres d'emploi</p>
                     </div>
                 </div>
                 <div>
