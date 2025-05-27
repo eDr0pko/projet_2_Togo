@@ -24,6 +24,12 @@
 
         <main class="container mx-auto px-4 py-10">
             <h2 class="text-3xl font-semibold text-blue-700 mb-8 text-center">Nos Offres d’Emploi</h2>
+            @if(session('success'))
+                <div class="bg-green-100 text-green-800 border border-green-400 px-4 py-3 rounded mb-6">
+                    {{ session('success') }}
+                </div>
+            @endif
+
 
             @if ($offres->isEmpty())
                 <p class="text-center text-gray-500">Aucune offre disponible pour le moment.</p>
