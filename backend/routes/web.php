@@ -55,6 +55,11 @@
         return view('accueil');
     });
 
+    // Page Services
+    Route::get('/services', function () {
+        return view('services');
+    });
+
 ?>
 
 

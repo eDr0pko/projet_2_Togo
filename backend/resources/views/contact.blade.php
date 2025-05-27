@@ -59,22 +59,22 @@
 
                 <!-- HOME -->
                 <div class="flex justify-center items-center">
-                <a href="#home" class="text-3xl font-semibold hover:text-blue-300">Home</a>
+                <a href="/" class="text-3xl font-semibold hover:text-blue-300">Accueil</a>
                 </div>
 
                 <!-- SERVICES -->
                 <div class="flex justify-center items-center">
-                <a href="#services" class="text-3xl font-semibold hover:text-blue-300">Services</a>
+                <a href="/services" class="text-3xl font-semibold hover:text-blue-300">Services</a>
                 </div>
 
                 <!-- RECRUTEMENT -->
                 <div class="flex justify-center items-center">
-                <a href="#recrutement" class="text-3xl font-semibold hover:text-blue-300">Recrutement</a>
+                <a href="/offres" class="text-3xl font-semibold hover:text-blue-300">Recrutement</a>
                 </div>
 
                 <!-- CONTACT -->
                 <div class="flex justify-center items-center">
-                <a href="#contact" class="text-3xl font-semibold hover:text-blue-300">Contact</a>
+                <a href="/contact" class="text-3xl font-semibold hover:text-blue-300">Contact</a>
                 </div>
             </div>
 
