@@ -22,6 +22,8 @@ CREATE TABLE IF NOT EXISTS offres (
 -- Table candidatures
 CREATE TABLE IF NOT EXISTS candidatures (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL,
+    prenom VARCHAR(100) NOT NULL,
     offre_id INT NOT NULL,
     cv VARCHAR(255) NOT NULL,
     lettre TEXT,

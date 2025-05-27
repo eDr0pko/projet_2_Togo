@@ -4,17 +4,20 @@
 
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\DB;
+    use App\Models\Offre;
 
     class OffreController extends Controller
     {
         public function index()
         {
-            // Vérifie si l'utilisateur est connecté (via session 'user_id')
             if (!session()->has('user_id')) {
                 return redirect('/login');
             }
-            return view('home');
+
+            $offres = Offre::with('candidatures')->get();
+            return view('home', compact('offres'));
         }
+
 
         public function getOffres()
         {
@@ -57,6 +60,32 @@
             DB::table('offres')->where('id', $id)->delete();
             return response()->json(['success' => true]);
         }
+
+        public function dashboard()
+        {
+            $offres = Offre::with('candidatures')->get();
+            return view('home', compact('offres'));
+        }
+
+        public function getCandidatures($offre_id)
+        {
+            $candidatures = \App\Models\Candidature::where('offre_id', $offre_id)->get();
+            return response()->json($candidatures);
+        }
+
+        public function changerPublication(Request $request, $id)
+        {
+            $request->validate([
+                'publiee' => 'required|boolean',
+            ]);
+
+            DB::table('offres')->where('id', $id)->update([
+                'publiee' => $request->publiee
+            ]);
+
+            return response()->json(['success' => true]);
+        }
+
     }
 ?>
 

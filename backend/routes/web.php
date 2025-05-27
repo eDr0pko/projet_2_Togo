@@ -24,12 +24,7 @@
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
     Route::post('/login', [LoginController::class, 'login']);
     Route::get('/logout', [LoginController::class, 'logout']);
-    Route::get('/home', function () {
-        if (!session()->has('user_id')) {
-            return redirect('/login');
-        }
-        return view('home');
-    });
+
 
     // Page Home
     use App\Http\Controllers\OffreController;
@@ -41,13 +36,14 @@
     Route::post('/api/offres', [OffreController::class, 'addOffre']);
     Route::put('/api/offres/{id}', [OffreController::class, 'updateOffre']);
     Route::delete('/api/offres/{id}', [OffreController::class, 'deleteOffre']);
+    Route::put('/api/offres/{id}/publication', [OffreController::class, 'changerPublication']);
 
     // Page Offres
     use App\Http\Controllers\RecrutementController;
     Route::get('/offres', [RecrutementController::class, 'index'])->name('offres.index');
     Route::get('/offres/{id}/candidature', [RecrutementController::class, 'show'])->name('offres.show');
     Route::post('/candidatures', [RecrutementController::class, 'store'])->name('candidatures.store');
-
+    Route::get('/api/candidatures/{offre_id}', [OffreController::class, 'getCandidatures']);
 
 ?>
 

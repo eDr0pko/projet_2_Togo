@@ -63,16 +63,32 @@
                 </h2>
                 <div id="liste-offres" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     <!-- Offres générées dynamiquement -->
+                     @foreach ($offres as $offre)
+                        <div class="offre bg-white p-4 rounded-lg shadow cursor-pointer hover:bg-blue-50" data-id="{{ $offre->id }}">
+                            <h3 class="font-bold text-blue-700">{{ $offre->titre }}</h3>
+                            <p class="text-gray-600">{{ $offre->description }}</p>
+                        </div>
+                    @endforeach
+
+                     
+                </div>
+            </section>
+
+            <section id="section-candidatures" class="mt-12 hidden">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4 flex items-center">
+                    <i class="fa-solid fa-users mr-2 text-gray-500"></i> Candidatures reçues
+                </h2>
+                <div id="liste-candidatures" class="space-y-4">
+                    <!-- Les candidatures seront injectées ici -->
                 </div>
             </section>
         </main>
 
         <!-- Footer -->
-        <footer class="bg-gray-200 text-center py-4 mt-10 text-sm text-gray-600">
-            &copy; 2025 2N MULTI SERVICE. Tous droits réservés. Développé par
-            <a href="https://neostart.tech/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">Neostart.tech</a>.
+        <footer class="bg-gray-800 text-center py-4 mt-10 text-sm text-gray-400">
+            &copy; 2025 2N MULTI SERVICE. Tous droits réservés. Développé par 
+            <a href="https://neostart.tech/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Neostart.tech</a>.
         </footer>
-
     </body>
 </html>
 
