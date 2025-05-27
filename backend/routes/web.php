@@ -42,6 +42,13 @@
     Route::put('/api/offres/{id}', [OffreController::class, 'updateOffre']);
     Route::delete('/api/offres/{id}', [OffreController::class, 'deleteOffre']);
 
+    // Page Offres
+    use App\Http\Controllers\RecrutementController;
+    Route::get('/offres', [RecrutementController::class, 'index'])->name('offres.index');
+    Route::get('/offres/{id}/candidature', [RecrutementController::class, 'show'])->name('offres.show');
+    Route::post('/candidatures', [RecrutementController::class, 'store'])->name('candidatures.store');
+
+
 ?>
 
 
