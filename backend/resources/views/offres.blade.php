@@ -54,6 +54,7 @@
         </main>
 
         <!-- Footer -->
+        <!-- Footer -->
         <footer class="bg-gray-900 text-white mt-20">
             <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center items-center">
                 
@@ -82,13 +83,12 @@
                 <!-- Contact & Réseaux -->
                 <div>
                 <h3 class="text-lg font-semibold mb-4">Contact</h3>
-                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-phone mr-2"></i>+228 90 00 00 00</p>
+                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-phone mr-2"></i>+228 70 99 77 77</p>
                 <p class="text-gray-400 text-sm mb-2"><i class="fas fa-envelope mr-2"></i>contact@2nmultiservice.com</p>
-                <p class="text-gray-400 text-sm mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Lomé, Togo</p>
+                <p class="text-gray-400 text-sm mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Kegué kpatcha, Rue des 14 villas - Lomé, Togo</p>
 
                 <div class="flex justify-center space-x-4 text-xl">
                     <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="hover:text-sky-400"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
                 </div>
