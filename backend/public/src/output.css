@@ -884,15 +884,6 @@
   .bg-yellow-900 {
     background-color: var(--color-yellow-900);
   }
-  .bg-\[url\(\'\.\.\'\)\] {
-    background-image: url('..');
-  }
-  .bg-\[url\(\'\.\.\/\'\)\] {
-    background-image: url('../');
-  }
-  .bg-\[url\(\'\.\.\/images\/0F7A6951\'\)\] {
-    background-image: url('../images/0F7A6951');
-  }
   .bg-\[url\(\'\.\.\/images\/0F7A6951\.jpg\'\)\] {
     background-image: url('../images/0F7A6951.jpg');
   }
@@ -1713,11 +1704,6 @@
   .md\:justify-around {
     @media (width >= 48rem) {
       justify-content: space-around;
-    }
-  }
-  .md\:px-20 {
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 20);
     }
   }
   .md\:text-2xl {

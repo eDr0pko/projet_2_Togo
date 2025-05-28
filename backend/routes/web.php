@@ -60,6 +60,36 @@
         return view('services');
     });
 
+    // Page nettoyage-proprete
+    Route::get('/nettoyage-proprete', function () {
+        return view('nettoyage-proprete');
+    });
+
+    // Page securite-cynophile
+    Route::get('/securite-cynophile', function () {
+        return view('securite-cynophile');
+    });
+
+    // Page securite-electronique
+    Route::get('/securite-electronique', function () {
+        return view('securite-electronique');
+    });
+
+    // Page securite-gardiennage
+    Route::get('/securite-gardiennage', function () {
+        return view('securite-gardiennage');
+    });
+
+    // Page securite-incendie
+    Route::get('/securite-incendie', function () {
+        return view('securite-incendie');
+    });
+
+    // Page surveillance-evenementielle
+    Route::get('/surveillance-evenementielle', function () {
+        return view('surveillance-evenementielle');
+    });
+
 ?>
 
 

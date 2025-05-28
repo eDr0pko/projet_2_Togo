@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sécurité & Gardiennage | 2N MULTI SERVICES</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header class="bg-blue-800 text-white py-10 px-6 text-center shadow-md">
+    <h1 class="text-4xl font-bold uppercase">Sécurité & Gardiennage</h1>
+    <p class="text-lg mt-4">Une présence humaine au cœur de votre tranquillité</p>
+  </header>
+
+  <section class="max-w-5xl mx-auto py-12 px-6">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-6">Des solutions sur mesure pour chaque besoin</h2>
+    <p class="text-lg mb-6 leading-relaxed">
+      À l’heure des avancées technologiques, la présence humaine reste un pilier fondamental de toute stratégie de sécurité efficace.
+      <strong>2N MULTI SERVICES</strong> vous propose des solutions de gardiennage sur mesure, adaptées à vos besoins spécifiques et à la nature de vos sites.
+    </p>
+
+    <p class="mb-10 text-lg leading-relaxed">
+      Nos agents, rigoureusement formés, assurent une surveillance <strong>active</strong>, <strong>réactive</strong> et <strong>adaptable</strong>,
+      quels que soient les environnements ou les contraintes. Nous mettons l’humain au service de votre tranquillité.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 shadow-md rounded-lg border-l-4 border-blue-600">
+        <h3 class="text-xl font-bold mb-3">🔒 Sites industriels et commerciaux</h3>
+        <p>Protection contre les vols, actes de vandalisme et intrusions.</p>
+      </div>
+
+      <div class="bg-white p-6 shadow-md rounded-lg border-l-4 border-blue-600">
+        <h3 class="text-xl font-bold mb-3">🏗️ Surveillance de chantiers</h3>
+        <p>Sécurisation des équipements, matériaux et zones sensibles en phase de construction.</p>
+      </div>
+
+      <div class="bg-white p-6 shadow-md rounded-lg border-l-4 border-blue-600">
+        <h3 class="text-xl font-bold mb-3">🏠 Gardiennage résidentiel</h3>
+        <p>Veille permanente sur les immeubles, villas, résidences privées ou lotissements.</p>
+      </div>
+
+      <div class="bg-white p-6 shadow-md rounded-lg border-l-4 border-blue-600">
+        <h3 class="text-xl font-bold mb-3">🔁 Rondes & inspections</h3>
+        <p>Contrôle des points sensibles, anticipation d'incidents et traçabilité électronique possible.</p>
+      </div>
+    </div>
+
+    <div class="mt-12 bg-blue-100 p-6 rounded-lg border border-blue-300 shadow-inner">
+      <h4 class="text-xl font-semibold text-blue-800 mb-4">Notre engagement</h4>
+      <p class="text-lg">
+        Chaque mission est pensée pour offrir <strong>une sécurité renforcée</strong>,
+        <strong>une présence dissuasive</strong> et <strong>une réactivité exemplaire</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white mt-20">
+    <div class="max-w-7xl mx-auto py-12 grid grid-cols-1 md:grid-cols-3 gap-8 ">
+            
+      <!-- Logo et description -->
+      <div class="flex flex-col items-center text-center">
+        <img src="../images/LOGO 2N MULTI SERVICES.png" alt="Logo 2N Multi Service" class="w-32 mb-4">
+        <p class="text-gray-300 text-sm">
+          2N MULTI SERVICE est votre partenaire de confiance en <span class="font-semibold text-white">nettoyage, sécurité</span> et <span class="font-semibold text-white">surveillance</span>. Nous garantissons des prestations de qualité, pour un environnement sain et sécurisé.
+        </p>
+      </div>
+
+      <!-- Liens rapides -->
+      <div class="text-center">
+        <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="#home" class="hover:text-white transition">Accueil</a></li>
+            <li><a href="#about" class="hover:text-white transition">À propos</a></li>
+            <li><a href="#services" class="hover:text-white transition">Nos services</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+          </ul>
+      </div>
+
+      <!-- Contact & Réseaux -->
+      <div class="text-center">
+        <h3 class="text-lg font-semibold mb-4">Contact</h3>
+          <p class="text-gray-400 text-sm mb-2"><i class="fas fa-phone mr-2"></i>+228 90 00 00 00</p>
+          <p class="text-gray-400 text-sm mb-2"><i class="fas fa-envelope mr-2"></i>
+          </p>
+      </div>
+    </div>
+    <!-- Bas de page -->
+      <div class="bg-gray-800 text-center text-m text-gray-400 py-4">
+        &copy; 2025 2N MULTI SERVICE. Tous droits réservés. Développé par 
+        <a href="https://neostart.tech/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Neostart.tech</a>.
+      </div>
+  </footer>
+
+</body>
+</html>
