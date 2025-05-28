@@ -83,13 +83,13 @@
       </div>
 
       <!-- Liens -->
-      <div class="text-center">
+      <div>
         <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
         <ul class="space-y-2 text-gray-400 text-sm">
-          <li><a href="#home" class="hover:text-white transition">Accueil</a></li>
-          <li><a href="#about" class="hover:text-white transition">À propos</a></li>
-          <li><a href="#services" class="hover:text-white transition">Nos services</a></li>
-          <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+          <li><a href="/" class="hover:text-white transition">Accueil</a></li>
+          <li><a href="/services" class="hover:text-white transition">Nos services</a></li>
+          <li><a href="/offres" class="hover:text-white transition">Recrutement</a></li>
+          <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
         </ul>
       </div>
 

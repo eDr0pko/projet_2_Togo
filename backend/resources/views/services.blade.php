@@ -28,13 +28,29 @@
                 </ul>
                 </nav>
             </section>
+            <!-- Barre de Recherche -->
             <div class="relative text-gray-600">
-                <input type="search" name="serch" placeholder="Search" class="bg-white h-10 px-5 pr-10 rounded-full text-sm focus:outline-none">
-                <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
-                <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
-                    <path d="M55.146,51.887L41.588,37.786c3.486-4.144..."/>
-                </svg>
+                <input id="searchInput" type="search" name="search" placeholder="Rechercher..."
+                    class="bg-white h-10 px-5 pr-10 rounded-full text-sm w-full focus:outline-none focus:ring-2 focus:ring-gray-300 transition duration-200 shadow-sm border border-gray-300" autocomplete="off">
+
+                <button type="button" id="searchBtn" class="absolute right-0 top-0 mt-3 mr-4 text-gray-600 hover:text-black transition duration-200">
+                    <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
+                        <path
+                            d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786
+                            c0-12.682-10.318-23-23-23s-23,10.318-23,23
+                            s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162
+                            l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+                            c0.779,0,1.518-0.297,2.079-0.837
+                            C56.255,54.982,56.293,53.08,55.146,51.887z
+                            M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+                            s-17-7.626-17-17S14.61,6,23.984,6z" />
+                    </svg>
                 </button>
+
+                <ul id="suggestions"
+                    class="absolute top-full left-0 bg-white border border-gray-300 rounded-md mt-1 w-full max-h-60 overflow-auto hidden z-50 shadow-lg">
+                    <!-- Suggestions apparaîtront ici -->
+                </ul>
             </div>
         </div>
 
@@ -46,16 +62,29 @@
                 <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-[60%] h-auto" />
             </div>
 
-            <!-- SEARCH BAR -->
-            <div class="flex justify-end items-center">
-                <div class="relative w-full">
-                <input type="search" name="search" placeholder="Search" class="bg-white text-black h-10 px-5 pr-10 rounded-full text-sm w-full focus:outline-none">
-                <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
-                    <svg class="h-4 w-4 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
-                        <path d="M55.146,51.887L41.588,37.786c3.486-4.144..."/>
+            <!-- Barre de Recherche -->
+            <div class="relative text-gray-600">
+                <input id="searchInput" type="search" name="search" placeholder="Rechercher..."
+                    class="bg-white h-10 px-5 pr-10 rounded-full text-sm w-full focus:outline-none focus:ring-2 focus:ring-gray-300 transition duration-200 shadow-sm border border-gray-300" autocomplete="off">
+
+                <button type="button" id="searchBtn" class="absolute right-0 top-0 mt-3 mr-4 text-gray-600 hover:text-black transition duration-200">
+                    <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
+                        <path
+                            d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786
+                            c0-12.682-10.318-23-23-23s-23,10.318-23,23
+                            s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162
+                            l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+                            c0.779,0,1.518-0.297,2.079-0.837
+                            C56.255,54.982,56.293,53.08,55.146,51.887z
+                            M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+                            s-17-7.626-17-17S14.61,6,23.984,6z" />
                     </svg>
                 </button>
-                </div>
+
+                <ul id="suggestions"
+                    class="absolute top-full left-0 bg-white border border-gray-300 rounded-md mt-1 w-full max-h-60 overflow-auto hidden z-50 shadow-lg">
+                    <!-- Suggestions apparaîtront ici -->
+                </ul>
             </div>
 
             <!-- HOME -->
@@ -90,7 +119,7 @@
         </div>
 
         <!-- Contenu principal -->
-        <main class="w-full mx-auto space-y-16">
+        <main id = "Services" class="w-full mx-auto space-y-16">
             <!-- Catégorie 1 -->
             <section data-title="Forces de sécurité privée">
                 
@@ -320,12 +349,12 @@
 
                 <!-- Liens rapides -->
                 <div>
-                <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
+                    <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="#home" class="hover:text-white transition">Accueil</a></li>
-                        <li><a href="#about" class="hover:text-white transition">À propos</a></li>
-                        <li><a href="#services" class="hover:text-white transition">Nos services</a></li>
-                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="/" class="hover:text-white transition">Accueil</a></li>
+                        <li><a href="/services" class="hover:text-white transition">Nos services</a></li>
+                        <li><a href="/offres" class="hover:text-white transition">Recrutement</a></li>
+                        <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
                     </ul>
                 </div>
 

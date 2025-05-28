@@ -48,6 +48,11 @@
                             <path d="M55.146,51.887L41.588,37.786c..."/>
                         </svg>
                     </button>
+
+                    <ul id="suggestions"
+                        class="absolute top-full left-0 bg-white border border-gray-300 rounded-md mt-1 w-full max-h-60 overflow-auto hidden z-50 shadow-lg">
+                        <!-- Suggestions apparaîtront ici -->
+                    </ul>
                 </div>
             </div>
 
@@ -73,7 +78,7 @@
             </div>
         </header>
 
-        <section class="py-28 bg-white">
+        <section id="À propos de nous" class="py-28 bg-white">
             <div class="max-w-full pl-[5%] pr-[10%] grid grid-cols-1 lg:grid-cols-[60%_40%]">
 
                 <!-- Images empilées -->
@@ -240,10 +245,10 @@
             </div>
         </section>
 
-        <section class="max-w-4xl mx-auto px-6 py-12">
+        <section id="FAQ" class="max-w-4xl mx-auto px-6 py-12">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Questions Fréquentes</h2>
 
-            <div class="space-y-4" id="faq">
+            <div class="space-y-4">
                 <!-- FAQ Item -->
                 <div class="bg-white border border-gray-300 rounded-lg shadow overflow-hidden">
                     <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(0)">
@@ -335,27 +340,27 @@
         </script>
 
         <!-- Contact Info -->
-        <section class="flex flex-col md:flex-row md:justify-around gap-10 py-10 px-4 bg-gray-50 items-center">
+        <section id="Contact-info" class="flex flex-col md:flex-row md:justify-around gap-10 py-10 px-4 bg-gray-50 items-center">
             <a href="#" class="bg-white shadow-md rounded-lg p-6 text-center flex flex-col items-center w-[70%] md:w-[20%] hover:scale-110 transition-transform duration-300">
                 <div class="bg-blue-600 text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
                 <i class="fas fa-phone text-white text-xl"></i>
                 </div>
                 <h3 class="text-lg font-bold mb-1">Appelez-nous</h3>
-                <p>(+228) 123 456 789</p>
+                <p>(+228) 70 99 77 77</p>
             </a>
             <a href="#" class="bg-white shadow-md rounded-lg p-6 text-center flex flex-col items-center w-[70%] md:w-[20%] hover:scale-110 transition-transform duration-300">
                 <div class="bg-blue-600 text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
                 <i class="fas fa-envelope text-white text-xl"></i>
                 </div>
                 <h3 class="text-lg font-bold mb-1">Notre email</h3>
-                <p>example@yourdomain.com</p>
+                <p>contact@2nmultiservice.com</p>
             </a>
             <a href="#" class="bg-white shadow-md rounded-lg p-6 text-center flex flex-col items-center w-[70%] md:w-[20%] hover:scale-110 transition-transform duration-300">
                 <div class="bg-blue-600 text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
                 <i class="fas fa-map-marker-alt text-white text-xl"></i>
                 </div>
                 <h3 class="text-lg font-bold mb-1">Notre adresse</h3>
-                <p>66 Guild Street, Great North Town.</p>
+                <p>Kegué kpatcha, Rue des 14 villas - Lomé, Togo</p>
             </a>
         </section>  
 
@@ -376,12 +381,12 @@
 
                 <!-- Liens rapides -->
                 <div>
-                <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
+                    <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="#home" class="hover:text-white transition">Accueil</a></li>
-                        <li><a href="#about" class="hover:text-white transition">À propos</a></li>
-                        <li><a href="#services" class="hover:text-white transition">Nos services</a></li>
-                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="/" class="hover:text-white transition">Accueil</a></li>
+                        <li><a href="/services" class="hover:text-white transition">Nos services</a></li>
+                        <li><a href="/offres" class="hover:text-white transition">Recrutement</a></li>
+                        <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
                     </ul>
                 </div>
 
