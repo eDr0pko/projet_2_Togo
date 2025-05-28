@@ -8,7 +8,7 @@
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 <header>
-  <div class="pb-20 hidden md:flex flex-row justify-between items-center z-10 relative px-[3%] bg-green-500 bg-cover bg-black/20 bg-center backdrop-blur-sm gap-10" style="background-position: center -300px;">
+  <div class="pb-20 hidden md:flex flex-row justify-between items-center z-10 relative px-[3%] bg-blue-500 bg-cover bg-center backdrop-blur-sm gap-10" style="background-position: center -300px;">
     <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-40 h-32" />
     <section id="navbar">
       <nav>
@@ -32,7 +32,7 @@
 
 
   <!-- VERSION MOBILE -->
-  <div class="md:hidden grid grid-cols-2 gap-4 px-4 py-4 bg-green-500 bg-cover bg-center bg-black/20 backdrop-blur-sm text-white">
+  <div class="md:hidden grid grid-cols-2 gap-4 px-4 py-4 bg-blue-500 bg-cover bg-center backdrop-blur-sm text-white">
 
     <!-- LOGO -->
     <div class="flex justify-center items-center">
