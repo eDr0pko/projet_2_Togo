@@ -45,6 +45,21 @@
     Route::post('/candidatures', [RecrutementController::class, 'store'])->name('candidatures.store');
     Route::get('/api/candidatures/{offre_id}', [OffreController::class, 'getCandidatures']);
 
+    // Page Contact
+    Route::get('/contact', function () {
+        return view('contact');
+    });
+
+    // Page Accueil
+    Route::get('/', function () {
+        return view('accueil');
+    });
+
+    // Page Services
+    Route::get('/services', function () {
+        return view('services');
+    });
+
 ?>
 
 

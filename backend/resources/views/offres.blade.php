@@ -8,18 +8,73 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body class="bg-gray-50 text-gray-800">
-
-        <header class="bg-blue-700 text-white py-6 shadow">
-            <div class="container mx-auto px-4 flex justify-between items-center">
-                <div class="flex items-center space-x-4">
-                    <img src="{{ asset('images/LOGO 2N MULTI SERVICES.png') }}" alt="Logo 2N" class="h-14 w-auto rounded bg-white p-1 shadow-inner">
-                    <div>
-                        <h1 class="text-4xl font-bold">2N MULTI SERVICE</h1>
-                        <p class="text-sm text-blue-100">Rejoignez nos équipes</p>
-                    </div>
+        <header>
+            <!-- VERSION PC/TABLETTE GRANDE (inchangée) -->
+            <div class="pb-20 hidden md:flex flex-row justify-between items-center z-10 relative px-[3%] bg-[url('../images/0F7A6951.jpg')] bg-cover bg-black/20 bg-center backdrop-blur-sm gap-10" style="background-position: center -300px;">
+                <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-[15%] h-[15%]" />
+                <section id="navbar">
+                <nav>
+                    <ul class="flex flex-row gap-[5%] justify-center text-white text-3xl font-semibold">
+                        <li><a href="/" class="hover:text-blue-700 transition-colors duration-500">Accueil</a></li>
+                        <li><a href="/services" class="hover:text-blue-700 transition-colors duration-500">Services</a></li>
+                        <li><a href="/offres" class="hover:text-blue-700 transition-colors duration-500">Recrutement</a></li>
+                        <li><a href="/contact" class="hover:text-blue-700 transition-colors duration-500">Contact</a></li>
+                    </ul>
+                </nav>
+                </section>
+                <div class="relative text-gray-600">
+                <input type="search" name="serch" placeholder="Search" class="bg-white h-10 px-5 pr-10 rounded-full text-sm focus:outline-none">
+                <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                    <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
+                        <path d="M55.146,51.887L41.588,37.786c3.486-4.144..."/>
+                    </svg>
+                </button>
                 </div>
-                <i class="fa-solid fa-briefcase text-2xl"></i>
             </div>
+
+            <!-- VERSION MOBILE -->
+            <div class="md:hidden grid grid-cols-2 gap-4 px-4 py-4 bg-[url('../images/0F7A6951.jpg')] bg-cover bg-center bg-black/20 backdrop-blur-sm text-white">
+
+                <!-- LOGO -->
+                <div class="flex justify-center items-center">
+                <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-[60%] h-auto" />
+                </div>
+
+                <!-- SEARCH BAR -->
+                <div class="flex justify-end items-center">
+                <div class="relative w-full">
+                    <input type="search" name="search" placeholder="Search" class="bg-white text-black h-10 px-5 pr-10 rounded-full text-sm w-full focus:outline-none">
+                    <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                        <svg class="h-4 w-4 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
+                            <path d="M55.146,51.887L41.588,37.786c3.486-4.144..."/>
+                        </svg>
+                    </button>
+                </div>
+                </div>
+
+                <!-- HOME -->
+                <div class="flex justify-center items-center">
+                <a href="/" class="text-3xl font-semibold hover:text-blue-300">Accueil</a>
+                </div>
+
+                <!-- SERVICES -->
+                <div class="flex justify-center items-center">
+                <a href="/services" class="text-3xl font-semibold hover:text-blue-300">Services</a>
+                </div>
+
+                <!-- RECRUTEMENT -->
+                <div class="flex justify-center items-center">
+                <a href="/offres" class="text-3xl font-semibold hover:text-blue-300">Recrutement</a>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="flex justify-center items-center">
+                <a href="/contact" class="text-3xl font-semibold hover:text-blue-300">Contact</a>
+                </div>
+            </div>
+
+            <!-- HR (valable pour toutes tailles d'écran) -->
+            <hr class="relative z-10 h-px bg-white border-0 dark:bg-white" />
         </header>
 
         <main class="container mx-auto px-4 py-10">
@@ -54,6 +109,7 @@
         </main>
 
         <!-- Footer -->
+        <!-- Footer -->
         <footer class="bg-gray-900 text-white mt-20">
             <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center items-center">
                 
@@ -82,13 +138,12 @@
                 <!-- Contact & Réseaux -->
                 <div>
                 <h3 class="text-lg font-semibold mb-4">Contact</h3>
-                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-phone mr-2"></i>+228 90 00 00 00</p>
+                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-phone mr-2"></i>+228 70 99 77 77</p>
                 <p class="text-gray-400 text-sm mb-2"><i class="fas fa-envelope mr-2"></i>contact@2nmultiservice.com</p>
-                <p class="text-gray-400 text-sm mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Lomé, Togo</p>
+                <p class="text-gray-400 text-sm mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Kegué kpatcha, Rue des 14 villas - Lomé, Togo</p>
 
                 <div class="flex justify-center space-x-4 text-xl">
                     <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="hover:text-sky-400"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
                 </div>

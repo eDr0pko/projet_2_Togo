@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Accueil</title>
+
+        <link href="src/output.css" rel="stylesheet">
+        <script type="module" src="js/main.js" defer></script>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+
+    <body>
+        <header class="relative overflow-hidden h-screen">
+
+            <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+                <source src="../images/169 Aspect ratio video test.mp4" type="video/mp4" />
+                Votre navigateur ne supporte pas les vidéos HTML5.
+            </video>
+
+            <div class="flex flex-row justify-between items-center z-10 relative px-[3%] bg-black/20 backdrop-blur-sm">
+
+                <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-[15%] h-[15%]" />
+
+                <section id="navbar">
+                    <nav>
+                        <ul class="flex flex-row justify-center items-center gap-15 text-white text-3xl font-semibold">
+                            <li><a href="/" class=" hover:text-blue-700 transition-colors duration-500">Accueil</a></li>
+                            <li><a href="/services" class=" hover:text-blue-700 transition-colors duration-500">Services</a></li>
+                            <li><a href="/offres" class=" hover:text-blue-700 transition-colors duration-500">Recrutement</a></li>
+                            <li><a href="/contact" class=" hover:text-blue-700 transition-colors duration-500">Contact</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <div class="relative text-gray-600">
+                    <input type="search" name="serch" placeholder="Search" class="bg-white h-10 px-5 pr-10 rounded-full text-sm focus:outline-none">
+                    <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                        <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+                            <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                </div>
+                <hr class="relative z-10 h-px bg-gray-400 border-0 dark:bg-gray-400">
+            </div>
+            <hr class="relative z-10 h-px bg-white border-0 dark:bg-white">
+        
+            <div class="pt-[10%] pl-[20%] relative z-10 flex flex-col gap-2 text-white ">
+                <div class="text-sm font-semibold bg-blue-800 w-[8%] px-1 py-1 align-middle text-center">Depuis 1956</div>
+                <div class="text-7xl font-bold">2N</div>
+                <div class="text-7xl font-bold">MULTI SERVICE</div>
+                <a href="contact.html" class="mt-[4%] bg-blue-800 hover:bg-red-600 text-white font-medium pt-4 pb-5 px-6 text-xl w-[17%] text-center transition-all duration-500 ease-in-out transform hover:scale-105">
+                Contacter-nous
+                </a>
+            </div>
+        </header>
+
+        <section class="py-28 bg-white">
+            <div class="max-w-full pl-[5%] pr-[10%] grid grid-cols-1 lg:grid-cols-[60%_40%]">
+
+                <!-- Images empilées -->
+                <div class="py-6 relative w-[80%] h-auto">
+                <img src="../images/0F7A6564.jpg" alt="Firefighter 1"
+                    style="width: clamp(80px, 20vw, 256px);"
+                    class="h-auto rounded shadow-lg absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
+
+                <img src="../images/0F7A6951.jpg" alt="Firefighter 2"
+                    class="w-full h-auto rounded shadow-lg ml-20 scale-x-[-1]">
+                </div>
+
+                <!-- Texte et chiffres -->
+                <div class="py-6 text-gray-800">
+                <p class="text-sm uppercase tracking-widest text-yellow-600 font-bold mb-2">À propos de nous</p>
+                <h2 class="text-4xl font-extrabold leading-tight mb-4">Des solutions de sécurité, de propreté et de maintenance à la hauteur de vos exigences</h2>
+                <p class="text-gray-600 mb-6">
+                2N MULTI SERVICES est une entreprise togolaise innovante, spécialisée dans la sécurité humaine, la sécurité électronique, la sécurité incendie, la propreté et la maintenance professionnelle.
+                Basée à Lomé, elle tire sa force de l’expertise de 2GÉANTS SÉCURITÉ, sa maison-mère française reconnue dans le domaine de la sûreté à l’échelle internationale.
+                </p>
+                <p class="text-gray-600 mb-6">
+                Nous combinons savoir-faire local et standards internationaux pour proposer des solutions complètes, adaptées aux réalités du marché togolais, avec un haut niveau d’exigence.
+                </p>
+                <p class="text-gray-600 mb-6">
+                Notre mission : garantir la sécurité, l’hygiène et la performance de vos espaces, à travers une approche humaine, technologique et durable.
+                </p>
+
+                <div class="flex flex-wrap gap-12 mt-6" id="counter-section">
+                    <div>
+                        <p class="text-3xl font-bold text-blue-600 counter inline-block" data-target="150">0</p>
+                        <p class="text-sm font-semibold text-gray-600 mt-1 uppercase">Agents de sécurité formés et opérationnels</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold text-blue-600 counter inline-block" data-target="100">0</p>
+                        <p class="text-sm font-semibold text-gray-600 mt-1 uppercase">Sites clients sécurisés et entretenus</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold text-blue-600 counter inline-block" data-target="25">0</p>
+                        <p class="text-sm font-semibold text-gray-600 mt-1 uppercase">Chiens dressés pour la sécurité cynophile</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold text-blue-600 counter inline-block" data-target="15">0</p>
+                        <p class="text-sm font-semibold text-gray-600 mt-1 uppercase">Experts incendie et SSIAP certifiés</p>
+                    </div>
+                </div>
+
+                <script>
+                    const counters = document.querySelectorAll('.counter');
+                    let started = false;
+
+                    function animateCounter(counter) {
+                        counter.innerText = '0';
+                        const target = +counter.getAttribute('data-target');
+                        let current = 0;
+                        const increment = Math.ceil(target / 60);
+
+                        function update() {
+                            if (current < target) {
+                            current += increment;
+                            counter.innerText = current;
+                            setTimeout(update, 15);
+                            } else {
+                            counter.innerText = target + "+";
+                            }
+                        }
+
+                        update();
+                    }
+
+                    // Lancer tous les compteurs quand ils entrent dans la vue (une seule fois)
+                    const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting && !started) {
+                            started = true;
+                            counters.forEach(animateCounter);
+                            }
+                        });
+                    }, {
+                        threshold: 0.3
+                    });
+
+                    observer.observe(document.querySelector('#counter-section'));
+
+                    // Relancer l’animation individuellement au survol
+                    counters.forEach(counter => {
+                        counter.addEventListener('mouseenter', () => animateCounter(counter));
+                    });
+                </script>
+                </div>
+            </div>
+        </section>
+
+        <section class=" py-16">
+            <div class="max-w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
+                
+                <!-- Carte 1 -->
+                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg">
+
+                <!-- Image zoomable -->
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                        style="background-image: url('../images/0F7A6474-Modifier.jpg');"></div>
+
+                <!-- Overlay sombre -->
+                <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+
+                <!-- Texte animé -->
+                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center text-white px-4 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-105 z-10">
+                    <h3 class="text-xl font-bold">Forces de Sécurité Privée</h3>
+                    <p class="text-sm">Sécurité & Gardiennage / Sécurité Cynophile / Surveillance Événementielle</p>
+                </div>
+                </a>
+
+                <!-- Carte 2 -->
+                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg">
+
+                <!-- Image zoomable -->
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                        style="background-image: url('../images/0F7A6750-Modifier.jpg');"></div>
+
+                <!-- Overlay sombre -->
+                <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+
+                <!-- Texte animé -->
+                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center text-white px-4 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-105 z-10">
+                    <h3 class="text-xl font-bold">SÉCURITÉ INCENDIE</h3>
+                    <p class="text-sm">Prévention & Intervention / Solutions Techniques / Équipements de Lutte contre le Feu / Formation & Évacuation / Maintenance & Vérification</p>
+                </div>
+                </a>
+
+                <!-- Carte 3 -->
+                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg">
+
+                <!-- Image zoomable -->
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                        style="background-image: url('../images/0F7A6873.jpg');"></div>
+
+                <!-- Overlay sombre -->
+                <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+
+                <!-- Texte animé -->
+                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center text-white px-4 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-105 z-10">
+                    <h3 class="text-xl font-bold">NETTOYAGE & PROPRETÉ</h3>
+                    <p class="text-sm">Nettoyage Professionnel & Industriel / Désinfection & Traitement / Nettoyage de Fin de Chantier</p>
+                </div>
+                </a>
+
+                <!-- Carte 4 -->
+                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg">
+
+                <!-- Image zoomable -->
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                        style="background-image: url('../images/0F7A6773.jpg');"></div>
+
+                <!-- Overlay sombre -->
+                <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+
+                <!-- Texte animé -->
+                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center text-white px-4 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-105 z-10">
+                    <h3 class="text-xl font-bold">SÉCURITÉ ÉLECTRONIQUE</h3>
+                    <p class="text-sm">Vidéosurveillance Intelligente / Contrôle d’Accès / Détection & Prévention Incendie / Alarmes Anti-Intrusion</p>
+                </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="max-w-4xl mx-auto px-6 py-12">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Questions Fréquentes</h2>
+
+            <div class="space-y-4" id="faq">
+                <!-- FAQ Item -->
+                <div class="bg-white border border-gray-300 rounded-lg shadow overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(0)">
+                    <span class="text-lg font-medium text-gray-800">Quels types de sites pouvez-vous sécuriser ?</span>
+                    <svg class="w-5 h-5 transition-transform duration-500 transform" id="arrow-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    </button>
+                    <div id="answer-0" class="faq-answer px-6 text-gray-600 max-h-0 overflow-hidden opacity-0 transition-all duration-[800ms] ease-in-out">
+                    <p class="py-4">
+                    Nous intervenons sur une grande variété de sites : bureaux, entrepôts, chantiers, hôtels, résidences, hôpitaux, événements, etc.
+                    </p>
+                    </div>
+                </div>
+
+                <!-- Répète pour chaque FAQ -->
+                <div class="bg-white border border-gray-300 rounded-lg shadow overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(1)">
+                    <span class="text-lg font-medium text-gray-800">Vos agents sont-ils formés ?</span>
+                    <svg class="w-5 h-5 transition-transform duration-500 transform" id="arrow-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    </button>
+                    <div id="answer-1" class="faq-answer px-6 text-gray-600 max-h-0 overflow-hidden opacity-0 transition-all duration-[800ms] ease-in-out">
+                    <p class="py-4">
+                    Oui, tous nos agents sont rigoureusement formés selon des standards internationaux. Ils sont préparés à réagir efficacement en cas d'urgence.
+                    </p>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-300 rounded-lg shadow overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(2)">
+                    <span class="text-lg font-medium text-gray-800">Proposez-vous des services de sécurité avec chiens ?</span>
+                    <svg class="w-5 h-5 transition-transform duration-500 transform" id="arrow-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    </button>
+                    <div id="answer-2" class="faq-answer px-6 text-gray-600 max-h-0 overflow-hidden opacity-0 transition-all duration-[800ms] ease-in-out">
+                    <p class="py-4">
+                    Oui. Nos équipes cynophiles sont composées de maîtres-chiens professionnels et de chiens dressés pour sécuriser les sites sensibles, étendus ou isolés.
+                    </p>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-300 rounded-lg shadow overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(3)">
+                    <span class="text-lg font-medium text-gray-800">Intervenez-vous aussi dans le nettoyage ?</span>
+                    <svg class="w-5 h-5 transition-transform duration-500 transform" id="arrow-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    </button>
+                    <div id="answer-3" class="faq-answer px-6 text-gray-600 max-h-0 overflow-hidden opacity-0 transition-all duration-[800ms] ease-in-out">
+                    <p class="py-4">
+                    Oui. Nous proposons des services de nettoyage professionnel, industriel, de désinfection et de traitement anti-nuisibles.
+                    </p>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-300 rounded-lg shadow overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFAQ(4)">
+                    <span class="text-lg font-medium text-gray-800">Vos systèmes sont-ils conformes aux normes ?</span>
+                    <svg class="w-5 h-5 transition-transform duration-500 transform" id="arrow-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    </button>
+                    <div id="answer-4" class="faq-answer px-6 text-gray-600 max-h-0 overflow-hidden opacity-0 transition-all duration-[800ms] ease-in-out">
+                    <p class="py-4">
+                    Oui, toutes nos prestations respectent les normes nationales et internationales. Nous assurons une veille réglementaire permanente.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            function toggleFAQ(index) {
+                const answer = document.getElementById('answer-' + index);
+                const arrow = document.getElementById('arrow-' + index);
+
+                if (answer.classList.contains('max-h-0')) {
+                    answer.classList.remove('max-h-0', 'opacity-0');
+                    answer.classList.add('max-h-96', 'opacity-100');
+                    arrow.classList.add('rotate-180');
+                } else {
+                    answer.classList.add('max-h-0', 'opacity-0');
+                    answer.classList.remove('max-h-96', 'opacity-100');
+                    arrow.classList.remove('rotate-180');
+                }
+            }
+        </script>
+
+        <!-- Contact Info -->
+        <section class="flex flex-col md:flex-row md:justify-around gap-10 py-10 px-4 bg-gray-50 items-center">
+            <a href="#" class="bg-white shadow-md rounded-lg p-6 text-center flex flex-col items-center w-[70%] md:w-[20%] hover:scale-110 transition-transform duration-300">
+                <div class="bg-blue-600 text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                <i class="fas fa-phone text-white text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-1">Appelez-nous</h3>
+                <p>(+228) 123 456 789</p>
+            </a>
+            <a href="#" class="bg-white shadow-md rounded-lg p-6 text-center flex flex-col items-center w-[70%] md:w-[20%] hover:scale-110 transition-transform duration-300">
+                <div class="bg-blue-600 text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                <i class="fas fa-envelope text-white text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-1">Notre email</h3>
+                <p>example@yourdomain.com</p>
+            </a>
+            <a href="#" class="bg-white shadow-md rounded-lg p-6 text-center flex flex-col items-center w-[70%] md:w-[20%] hover:scale-110 transition-transform duration-300">
+                <div class="bg-blue-600 text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-1">Notre adresse</h3>
+                <p>66 Guild Street, Great North Town.</p>
+            </a>
+        </section>  
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white mt-20">
+            <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center items-center">
+                
+                <!-- Logo et description -->
+                <div>
+                    <img src="../images/LOGO 2N MULTI SERVICES.png" alt="Logo 2N Multi Service" class="w-40 mb-4 mx-auto">
+                    <p class="text-gray-300 text-sm">
+                        2N MULTI SERVICE est votre partenaire de confiance en 
+                        <span class="font-semibold text-white">nettoyage, sécurité</span> et 
+                        <span class="font-semibold text-white">surveillance</span>. Nous garantissons des prestations de qualité, 
+                        pour un environnement sain et sécurisé.
+                    </p>
+                </div>
+
+                <!-- Liens rapides -->
+                <div>
+                <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#home" class="hover:text-white transition">Accueil</a></li>
+                        <li><a href="#about" class="hover:text-white transition">À propos</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Nos services</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Réseaux -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="text-gray-400 text-sm mb-2"><i class="fas fa-phone mr-2"></i>+228 70 99 77 77</p>
+                    <p class="text-gray-400 text-sm mb-2"><i class="fas fa-envelope mr-2"></i>contact@2nmultiservice.com</p>
+                    <p class="text-gray-400 text-sm mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Kegué kpatcha, Rue des 14 villas - Lomé, Togo</p>
+
+                    <div class="flex justify-center items-center gap-6 text-2xl mt-6">
+                        <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bas de page -->
+            <div class="bg-gray-800 text-center text-m text-gray-400 py-4">
+                &copy; 2025 2N MULTI SERVICE. Tous droits réservés. Développé par 
+                <a href="https://neostart.tech/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Neostart.tech</a>.
+            </div>
+        </footer>
+   </body>
+</html>
+
+
