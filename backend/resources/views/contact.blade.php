@@ -9,6 +9,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script type="module" src="js/main.js" defer></script>
     </head>
 
     <body class="bg-gray-50 text-gray-800">
@@ -18,22 +19,38 @@
             <div class="pb-20 hidden md:flex flex-row justify-between items-center z-10 relative px-[3%] bg-[url('../images/0F7A6951.jpg')] bg-cover bg-black/20 bg-center backdrop-blur-sm gap-10" style="background-position: center -300px;">
                 <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-[15%] h-[15%]" />
                 <section id="navbar">
-                <nav>
-                    <ul class="flex flex-row gap-[5%] justify-center text-white text-3xl font-semibold">
-                        <li><a href="/" class="hover:text-blue-700 transition-colors duration-500">Accueil</a></li>
-                        <li><a href="/services" class="hover:text-blue-700 transition-colors duration-500">Services</a></li>
-                        <li><a href="/offres" class="hover:text-blue-700 transition-colors duration-500">Recrutement</a></li>
-                        <li><a href="/contact" class="hover:text-blue-700 transition-colors duration-500">Contact</a></li>
-                    </ul>
-                </nav>
+                    <nav>
+                        <ul class="flex flex-row gap-[5%] justify-center text-white text-3xl font-semibold">
+                            <li><a href="/" class="hover:text-blue-700 transition-colors duration-500">Accueil</a></li>
+                            <li><a href="/services" class="hover:text-blue-700 transition-colors duration-500">Services</a></li>
+                            <li><a href="/offres" class="hover:text-blue-700 transition-colors duration-500">Recrutement</a></li>
+                            <li><a href="/contact" class="hover:text-blue-700 transition-colors duration-500">Contact</a></li>
+                        </ul>
+                    </nav>
                 </section>
+                <!-- Barre de Recherche -->
                 <div class="relative text-gray-600">
-                <input type="search" name="serch" placeholder="Search" class="bg-white h-10 px-5 pr-10 rounded-full text-sm focus:outline-none">
-                <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
-                    <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
-                        <path d="M55.146,51.887L41.588,37.786c3.486-4.144..."/>
-                    </svg>
-                </button>
+                    <input id="searchInput" type="search" name="search" placeholder="Rechercher..."
+                        class="bg-white h-10 px-5 pr-10 rounded-full text-sm w-full focus:outline-none focus:ring-2 focus:ring-gray-300 transition duration-200 shadow-sm border border-gray-300" autocomplete="off">
+
+                    <button type="button" id="searchBtn" class="absolute right-0 top-0 mt-3 mr-4 text-gray-600 hover:text-black transition duration-200">
+                        <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
+                            <path
+                                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786
+                                c0-12.682-10.318-23-23-23s-23,10.318-23,23
+                                s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162
+                                l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+                                c0.779,0,1.518-0.297,2.079-0.837
+                                C56.255,54.982,56.293,53.08,55.146,51.887z
+                                M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+                                s-17-7.626-17-17S14.61,6,23.984,6z" />
+                        </svg>
+                    </button>
+
+                    <ul id="suggestions"
+                        class="absolute top-full left-0 bg-white border border-gray-300 rounded-md mt-1 w-full max-h-60 overflow-auto hidden z-50 shadow-lg">
+                        <!-- Suggestions apparaîtront ici -->
+                    </ul>
                 </div>
             </div>
 
@@ -45,16 +62,29 @@
                 <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-[60%] h-auto" />
                 </div>
 
-                <!-- SEARCH BAR -->
-                <div class="flex justify-end items-center">
-                <div class="relative w-full">
-                    <input type="search" name="search" placeholder="Search" class="bg-white text-black h-10 px-5 pr-10 rounded-full text-sm w-full focus:outline-none">
-                    <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
-                        <svg class="h-4 w-4 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
-                            <path d="M55.146,51.887L41.588,37.786c3.486-4.144..."/>
+                <!-- Barre de Recherche -->
+                <div class="relative text-gray-600">
+                    <input id="searchInput" type="search" name="search" placeholder="Rechercher..."
+                        class="bg-white h-10 px-5 pr-10 rounded-full text-sm w-full focus:outline-none focus:ring-2 focus:ring-gray-300 transition duration-200 shadow-sm border border-gray-300" autocomplete="off">
+
+                    <button type="button" id="searchBtn" class="absolute right-0 top-0 mt-3 mr-4 text-gray-600 hover:text-black transition duration-200">
+                        <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
+                            <path
+                                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786
+                                c0-12.682-10.318-23-23-23s-23,10.318-23,23
+                                s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162
+                                l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+                                c0.779,0,1.518-0.297,2.079-0.837
+                                C56.255,54.982,56.293,53.08,55.146,51.887z
+                                M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+                                s-17-7.626-17-17S14.61,6,23.984,6z" />
                         </svg>
                     </button>
-                </div>
+
+                    <ul id="suggestions"
+                        class="absolute top-full left-0 bg-white border border-gray-300 rounded-md mt-1 w-full max-h-60 overflow-auto hidden z-50 shadow-lg">
+                        <!-- Suggestions apparaîtront ici -->
+                    </ul>
                 </div>
 
                 <!-- HOME -->
@@ -83,27 +113,27 @@
         </header>
 
         <!-- Contact Info -->
-        <section class="flex flex-col md:flex-row md:justify-around gap-10 py-10 px-4 bg-gray-50 items-center">
+        <section id = "Contact" class="flex flex-col md:flex-row md:justify-around gap-10 py-10 px-4 bg-gray-50 items-center">
             <a href="#" class="bg-white shadow-md rounded-lg p-6 text-center flex flex-col items-center w-[70%] md:w-[20%] hover:scale-110 transition-transform duration-300">
                 <div class="bg-blue-600 text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
                 <i class="fas fa-phone text-white text-xl"></i>
                 </div>
                 <h3 class="text-lg font-bold mb-1">Appelez-nous</h3>
-                <p>(+228) 123 456 789</p>
+                <p>(+228) 70 99 77 77</p>
             </a>
             <a href="#" class="bg-white shadow-md rounded-lg p-6 text-center flex flex-col items-center w-[70%] md:w-[20%] hover:scale-110 transition-transform duration-300">
                 <div class="bg-blue-600 text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
                 <i class="fas fa-envelope text-white text-xl"></i>
                 </div>
                 <h3 class="text-lg font-bold mb-1">Notre email</h3>
-                <p>example@yourdomain.com</p>
+                <p>contact@2nmultiservice.com</p>
             </a>
             <a href="#" class="bg-white shadow-md rounded-lg p-6 text-center flex flex-col items-center w-[70%] md:w-[20%] hover:scale-110 transition-transform duration-300">
                 <div class="bg-blue-600 text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
                 <i class="fas fa-map-marker-alt text-white text-xl"></i>
                 </div>
                 <h3 class="text-lg font-bold mb-1">Notre adresse</h3>
-                <p>66 Guild Street, Great North Town.</p>
+                <p>Kegué kpatcha, Rue des 14 villas - Lomé, Togo</p>
             </a>
         </section>
 
@@ -149,12 +179,12 @@
 
                 <!-- Liens rapides -->
                 <div>
-                <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
+                    <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="#home" class="hover:text-white transition">Accueil</a></li>
-                        <li><a href="#about" class="hover:text-white transition">À propos</a></li>
-                        <li><a href="#services" class="hover:text-white transition">Nos services</a></li>
-                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="/" class="hover:text-white transition">Accueil</a></li>
+                        <li><a href="/services" class="hover:text-white transition">Nos services</a></li>
+                        <li><a href="/offres" class="hover:text-white transition">Recrutement</a></li>
+                        <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
                     </ul>
                 </div>
 
