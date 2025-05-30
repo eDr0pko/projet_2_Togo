@@ -107,36 +107,103 @@
             <hr class="relative z-10 h-px bg-white border-0 dark:bg-white" />
         </header>
 
-        <main id="Offres" class="container mx-auto px-4 py-10">
-            <h2 id="Recrutement" class="text-3xl font-semibold text-blue-700 mb-8 text-center">Nos Offres d’Emploi</h2>
-            @if(session('success'))
-                <div class="bg-green-100 text-green-800 border border-green-400 px-4 py-3 rounded mb-6">
-                    {{ session('success') }}
+<main id="Offres" class="container mx-auto px-4 py-16">
+    <h2 id="Recrutement" 
+        class="text-4xl font-bold text-center text-blue-700 mb-12 animate-fade-in-up duration-700">
+        Nos Offres d’Emploi
+    </h2>
+
+    @if(session('success'))
+        <div class="bg-green-100 text-green-800 border border-green-400 px-4 py-3 rounded mb-6 animate-fade-in-down">
+            {{ session('success') }}
+        </div>
+    @endif
+
+    @if ($offres->isEmpty())
+        <p class="text-center text-gray-500 text-lg animate-fade-in-down">Aucune offre disponible pour le moment.</p>
+    @else
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            @foreach ($offres as $offre)
+                <div class="group bg-white p-6 rounded-xl shadow-xl border border-blue-100 
+                            transform transition duration-300 hover:scale-105 hover:shadow-2xl
+                            animate-slide-up opacity-0">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-600 mb-2 group-hover:text-red-600 transition">
+                            {{ $offre->titre }}
+                        </h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">{{ $offre->description }}</p>
+                    </div>
+                    <div class="mt-6 text-right">
+                        <a href="{{ route('offres.show', $offre->id) }}"
+                           class="inline-block bg-blue-600 hover:bg-red-600 text-white px-4 py-2 rounded-lg text-sm transition-all duration-300 ease-in-out">
+                            Postuler
+                        </a>
+                    </div>
                 </div>
-            @endif
+            @endforeach
+        </div>
+    @endif
+</main>
+
+<!-- ANIMATIONS (à placer en bas de la page) -->
+<script>
+    // Effet fade/slide quand les cartes entrent dans le viewport
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-fade-in-up');
+                entry.target.classList.remove('opacity-0');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    document.querySelectorAll('.animate-slide-up').forEach(el => {
+        observer.observe(el);
+    });
+</script>
+
+<!-- ANIMATIONS TAILWIND CUSTOM -->
+<style>
+    @keyframes fade-in-up {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fade-in-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade-in-up {
+        animation: fade-in-up 0.6s ease-out forwards;
+    }
+
+    .animate-fade-in-down {
+        animation: fade-in-down 0.6s ease-out forwards;
+    }
+
+    .animate-slide-up {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.5s ease-out;
+    }
+</style>
 
 
-            @if ($offres->isEmpty())
-                <p class="text-center text-gray-500">Aucune offre disponible pour le moment.</p>
-            @else
-                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    @foreach ($offres as $offre)
-                        <div class="bg-white p-6 rounded-xl shadow-md border border-blue-100 flex flex-col justify-between">
-                            <div>
-                                <h3 class="text-xl font-semibold text-blue-600 mb-2">{{ $offre->titre }}</h3>
-                                <p class="text-gray-700 text-sm">{{ $offre->description }}</p>
-                            </div>
-                            <div class="mt-4 text-right">
-                                <a href="{{ route('offres.show', $offre->id) }}"
-                                class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition">
-                                    Postuler
-                                </a>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            @endif
-        </main>
 
         <!-- Footer -->
         <footer class="bg-gray-900 text-white mt-20">
