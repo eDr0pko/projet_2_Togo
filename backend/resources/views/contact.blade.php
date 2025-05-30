@@ -16,16 +16,16 @@
         <header>
 
             <!-- VERSION PC/TABLETTE GRANDE (inchangée) -->
-            <div class="pb-20 hidden md:flex flex-row justify-between items-center z-10 relative px-[3%] bg-[url('../images/0F7A6951.jpg')] bg-cover bg-black/20 bg-center backdrop-blur-sm gap-10" style="background-position: center -300px;">
-                <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-[15%] h-[15%]" />
+            <div class="pb-20 hidden md:flex flex-row justify-between items-center z-10 relative px-[3%] bg-[url('../images/0F7A6951.jpg')] bg-cover bg-black/40 bg-center backdrop-blur-sm gap-10" style="background-position: center -300px;">
+                <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-[7%] h-[7%] mt-5 ml-[10%]" />
                 <section id="navbar">
                     <nav>
-                        <ul class="flex flex-row gap-[5%] justify-center text-white text-3xl font-semibold">
-                            <li><a href="/" class="hover:text-blue-700 transition-colors duration-500">Accueil</a></li>
-                            <li><a href="/services" class="hover:text-blue-700 transition-colors duration-500">Services</a></li>
-                            <li><a href="/offres" class="hover:text-blue-700 transition-colors duration-500">Recrutement</a></li>
-                            <li><a href="/contact" class="hover:text-blue-700 transition-colors duration-500">Contact</a></li>
-                        </ul>
+                    <ul class="flex flex-row gap-[5%] justify-center text-white text-3xl font-semibold">
+                        <li><a href="/" class="hover:text-blue-700 transition-colors duration-500">Accueil</a></li>
+                        <li><a href="/services" class="hover:text-blue-700 transition-colors duration-500">Services</a></li>
+                        <li><a href="/offres" class="hover:text-blue-700 transition-colors duration-500">Recrutement</a></li>
+                        <li><a href="/contact" class="hover:text-blue-700 transition-colors duration-500">Contact</a></li>
+                    </ul>
                     </nav>
                 </section>
                 <!-- Barre de Recherche -->
@@ -59,7 +59,7 @@
 
                 <!-- LOGO -->
                 <div class="flex justify-center items-center">
-                <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-[60%] h-auto" />
+                    <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-[60%] h-auto" />
                 </div>
 
                 <!-- Barre de Recherche -->
@@ -89,31 +89,29 @@
 
                 <!-- HOME -->
                 <div class="flex justify-center items-center">
-                <a href="/" class="text-3xl font-semibold hover:text-blue-300">Accueil</a>
+                    <a href="/" class="text-3xl font-semibold hover:text-blue-300">Accueil</a>
                 </div>
 
                 <!-- SERVICES -->
                 <div class="flex justify-center items-center">
-                <a href="/services" class="text-3xl font-semibold hover:text-blue-300">Services</a>
+                    <a href="/services" class="text-3xl font-semibold hover:text-blue-300">Services</a>
                 </div>
 
                 <!-- RECRUTEMENT -->
                 <div class="flex justify-center items-center">
-                <a href="/offres" class="text-3xl font-semibold hover:text-blue-300">Recrutement</a>
+                    <a href="/offres" class="text-3xl font-semibold hover:text-blue-300">Recrutement</a>
                 </div>
 
                 <!-- CONTACT -->
                 <div class="flex justify-center items-center">
-                <a href="/contact" class="text-3xl font-semibold hover:text-blue-300">Contact</a>
+                    <a href="/contact" class="text-3xl font-semibold hover:text-blue-300">Contact</a>
                 </div>
             </div>
 
-            <!-- HR (valable pour toutes tailles d'écran) -->
-            <hr class="relative z-10 h-px bg-white border-0 dark:bg-white" />
         </header>
 
         <!-- Contact Info -->
-        <section id = "Contact" class="flex flex-col md:flex-row md:justify-around gap-10 py-10 px-4 bg-gray-50 items-center">
+        <section id = "Contact" class="flex flex-col md:flex-row md:justify-between gap-10 py-10 px-[12%] bg-gray-50 items-center">
             <a href="#" class="bg-white shadow-md rounded-lg p-6 text-center flex flex-col items-center w-[70%] md:w-[20%] hover:scale-110 transition-transform duration-300">
                 <div class="bg-blue-600 text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
                 <i class="fas fa-phone text-white text-xl"></i>
@@ -138,9 +136,9 @@
         </section>
 
         <!-- Contact Form Section -->
-        <section class="grid grid-cols-1 md:grid-cols-2 p-10 max-w-8xl mx-auto items-center bg-white">
+        <section class="grid grid-cols-1 md:grid-cols-2 px-[10%] py-10 max-w-8xl mx-auto items-center bg-white">
             <div>
-                <img src="../images/LOGO 2N MULTI SERVICES.png" alt="Call Center" class="w-full object-cover">
+                <img src="../images/LOGO 2N MULTI SERVICES.png" alt="Call Center" class="w-[50%] mx-auto object-cover">
             </div>
             <div class="bg-white p-6">
                 <h2 class="text-2xl font-bold mb-6">Contactez-nous</h2>
@@ -168,7 +166,7 @@
                 
                 <!-- Logo et description -->
                 <div>
-                    <img src="../images/LOGO 2N MULTI SERVICES.png" alt="Logo 2N Multi Service" class="w-40 mb-4 mx-auto">
+                    <img src="../images/LOGO 2N MULTI SERVICES.png" alt="Logo 2N Multi Service" class="w-[25%] mb-4 mx-auto">
                     <p class="text-gray-300 text-sm">
                         2N MULTI SERVICE est votre partenaire de confiance en 
                         <span class="font-semibold text-white">nettoyage, sécurité</span> et 
