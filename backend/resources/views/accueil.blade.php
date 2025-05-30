@@ -40,7 +40,7 @@
                 </section>
 
                 <!-- Barre de Recherche -->
-                <div class="relative text-gray-600">
+                <div class="relative text-gray-600 z-20">
                     <input id="searchInput" type="search" name="search" placeholder="Rechercher..."
                         class="bg-white h-10 px-5 pr-10 rounded-full text-sm w-full focus:outline-none focus:ring-2 focus:ring-gray-300 transition duration-200 shadow-sm border border-gray-300" autocomplete="off">
 
@@ -63,11 +63,11 @@
                         <!-- Suggestions apparaîtront ici -->
                     </ul>
                 </div>
+                
             </div>
-
             <!-- HR lines -->
-            <hr class="relative z-10 h-px bg-gray-400 border-0 dark:bg-gray-400">
-            <hr class="relative z-10 h-px bg-white border-0 dark:bg-white">
+            <hr class="relative z-0 h-px bg-white border-0 dark:bg-white">
+            
 
             <!-- Texte principal -->
             <div class="pt-[15%] md:pt-[10%] px-[5%] md:pl-[20%] relative z-10 flex flex-col gap-3 text-white 
@@ -380,7 +380,7 @@
                 
                 <!-- Logo et description -->
                 <div>
-                    <img src="../images/LOGO 2N MULTI SERVICES.png" alt="Logo 2N Multi Service" class="w-40 mb-4 mx-auto">
+                    <img src="../images/LOGO 2N MULTI SERVICES.png" alt="Logo 2N Multi Service" class="w-[25%] mb-4 mx-auto">
                     <p class="text-gray-300 text-sm">
                         2N MULTI SERVICE est votre partenaire de confiance en 
                         <span class="font-semibold text-white">nettoyage, sécurité</span> et 
