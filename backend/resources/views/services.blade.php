@@ -16,8 +16,8 @@
     <body class="bg-gray-50 text-gray-800">
 
         <!-- VERSION PC/TABLETTE GRANDE (inchangée) -->
-        <div class="pb-20 hidden md:flex flex-row justify-between items-center z-10 relative px-[3%] bg-[url('../images/0F7A6951.jpg')] bg-cover bg-black/20 bg-center backdrop-blur-sm gap-10" style="background-position: center -300px;">
-            <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-[15%] h-[15%]" />
+        <div class="pb-20 hidden md:flex flex-row justify-between items-center z-10 relative px-[3%] bg-[url('../images/0F7A6951.jpg')] bg-cover bg-black/40 bg-center backdrop-blur-sm gap-10" style="background-position: center -300px;">
+            <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-[7%] h-[7%] mt-5 ml-[10%]" />
             <section id="navbar">
                 <nav>
                 <ul class="flex flex-row gap-[5%] justify-center text-white text-3xl font-semibold">
@@ -108,13 +108,10 @@
             </div>
         </div>
 
-        <!-- HR (valable pour toutes tailles d'écran) -->
-        <hr class="relative z-10 h-px bg-white border-0 dark:bg-white" />
-
             
 
         <!-- Barre sticky affichant la catégorie survolée -->
-        <div id="stickyHeader" class="sticky top-0 bg-white shadow-md z-50 p-4 text-4xl font-semibold text-center transition-colors duration-300">
+        <div id="stickyHeader" class="sticky top-0 bg-blue-600 text-white shadow-md z-50 p-4 text-5xl font-semibold text-center transition-colors duration-300 mb-12">
             Forces de sécurité privée
         </div>
 
@@ -191,7 +188,7 @@
 
             <!-- Catégorie 2 -->
             <section data-title="Sécurité Incendie">
-                <h2 id ="Sécurité-Incendie-bar" class=" bg-white shadow-md p-4 text-4xl font-semibold text-center transition-colors duration-300 mb-4">
+                <h2 id ="Sécurité-Incendie-bar" class=" bg-blue-600 text-white shadow-md p-4 text-5xl font-semibold text-center transition-colors duration-300 mt-4 mb-16">
                 Sécurité Incendie
                 </h2>
 
@@ -224,7 +221,7 @@
             </section>
             <!-- Catégorie 3 -->
             <section data-title="Nettoyage et Propreté">
-                <h2 id ="Nettoyage-et-Propreté-bar" class=" bg-white shadow-md p-4 text-4xl font-semibold text-center transition-colors duration-300 mb-4">
+                <h2 id ="Nettoyage-et-Propreté-bar" class=" bg-blue-600 text-white shadow-md p-4 text-5xl font-semibold text-center transition-colors duration-300 mt-4 mb-16">
                 Nettoyage et Propreté
                 </h2>
 
@@ -258,7 +255,7 @@
 
             <!-- Catégorie 4 -->
             <section data-title="Sécurité Électronique">
-                <h2 id ="Sécurité-Électronique-bar" class=" bg-white shadow-md p-4 text-4xl font-semibold text-center transition-colors duration-300 mb-4">
+                <h2 id ="Sécurité-Électronique-bar" class=" bg-blue-600 text-white shadow-md p-4 text-5xl font-semibold text-center transition-colors duration-300 mt-4 mb-16">
                 Sécurité Électronique
                 </h2>
 
@@ -338,7 +335,7 @@
                 
                 <!-- Logo et description -->
                 <div>
-                    <img src="../images/LOGO 2N MULTI SERVICES.png" alt="Logo 2N Multi Service" class="w-40 mb-4 mx-auto">
+                    <img src="../images/LOGO 2N MULTI SERVICES.png" alt="Logo 2N Multi Service" class="w-[25%] mb-4 mx-auto">
                     <p class="text-gray-300 text-sm">
                         2N MULTI SERVICE est votre partenaire de confiance en 
                         <span class="font-semibold text-white">nettoyage, sécurité</span> et 
