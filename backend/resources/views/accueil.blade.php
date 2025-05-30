@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Accueil</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="src/output.css" rel="stylesheet">
         <script type="module" src="js/main.js" defer></script>
@@ -20,37 +21,31 @@
                 Votre navigateur ne supporte pas les vidéos HTML5.
             </video>
 
-            <div class="flex flex-row justify-between items-center z-10 relative px-[3%] bg-black/20 backdrop-blur-sm">
+            <!-- Container principal -->
+            <div class="flex flex-col md:flex-row justify-between items-center z-10 relative px-[3%] bg-black/20 backdrop-blur-sm py-4">
 
-                <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="w-[15%] h-[15%]" />
+                <!-- Logo (masqué en mobile) -->
+                <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="hidden md:block w-[15%] h-[15%]" />
 
-                <section id="navbar">
+                <!-- Navbar -->
+                <section id="navbar" class="w-full md:w-auto mb-4 md:mb-0">
                     <nav>
-                        <ul class="flex flex-row justify-center items-center gap-15 text-white text-3xl font-semibold">
-                            <li><a href="/" class=" hover:text-blue-700 transition-colors duration-500">Accueil</a></li>
-                            <li><a href="/services" class=" hover:text-blue-700 transition-colors duration-500">Services</a></li>
-                            <li><a href="/offres" class=" hover:text-blue-700 transition-colors duration-500">Recrutement</a></li>
-                            <li><a href="/contact" class=" hover:text-blue-700 transition-colors duration-500">Contact</a></li>
+                        <ul class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-15 text-white text-xl md:text-3xl font-semibold">
+                            <li><a href="/" class="hover:text-blue-700 transition-colors duration-500">Accueil</a></li>
+                            <li><a href="/services" class="hover:text-blue-700 transition-colors duration-500">Services</a></li>
+                            <li><a href="/offres" class="hover:text-blue-700 transition-colors duration-500">Recrutement</a></li>
+                            <li><a href="/contact" class="hover:text-blue-700 transition-colors duration-500">Contact</a></li>
                         </ul>
                     </nav>
                 </section>
 
-                <!-- Barre de Recherche -->
-                <div class="relative text-gray-600">
-                    <input id="searchInput" type="search" name="search" placeholder="Rechercher..."
-                        class="bg-white h-10 px-5 pr-10 rounded-full text-sm w-full focus:outline-none focus:ring-2 focus:ring-gray-300 transition duration-200 shadow-sm border border-gray-300" autocomplete="off">
-
-                    <button type="button" id="searchBtn" class="absolute right-0 top-0 mt-3 mr-4 text-gray-600 hover:text-black transition duration-200">
+                <!-- Search bar -->
+                <div class="relative text-gray-600 mt-4 md:mt-0">
+                    <input type="search" name="search" placeholder="Search"
+                        class="bg-white h-8 md:h-10 px-5 pr-10 rounded-full text-sm focus:outline-none">
+                    <button type="submit" class="absolute right-0 top-0 mt-2 md:mt-3 mr-4">
                         <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
-                            <path
-                                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786
-                                c0-12.682-10.318-23-23-23s-23,10.318-23,23
-                                s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162
-                                l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
-                                c0.779,0,1.518-0.297,2.079-0.837
-                                C56.255,54.982,56.293,53.08,55.146,51.887z
-                                M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
-                                s-17-7.626-17-17S14.61,6,23.984,6z" />
+                            <path d="M55.146,51.887L41.588,37.786c..."/>
                         </svg>
                     </button>
 
@@ -59,18 +54,26 @@
                         <!-- Suggestions apparaîtront ici -->
                     </ul>
                 </div>
-
-                </div>
-                <hr class="relative z-10 h-px bg-gray-400 border-0 dark:bg-gray-400">
             </div>
+
+            <!-- HR lines -->
+            <hr class="relative z-10 h-px bg-gray-400 border-0 dark:bg-gray-400">
             <hr class="relative z-10 h-px bg-white border-0 dark:bg-white">
-        
-            <div class="pt-[10%] pl-[20%] relative z-10 flex flex-col gap-2 text-white ">
-                <div class="text-sm font-semibold bg-blue-800 w-[8%] px-1 py-1 align-middle text-center">Depuis 1956</div>
-                <div class="text-7xl font-bold">2N</div>
-                <div class="text-7xl font-bold">MULTI SERVICE</div>
-                <a href="contact.html" class="mt-[4%] bg-blue-800 hover:bg-red-600 text-white font-medium pt-4 pb-5 px-6 text-xl w-[17%] text-center transition-all duration-500 ease-in-out transform hover:scale-105">
-                Contacter-nous
+
+            <!-- Texte principal -->
+            <div class="pt-[15%] md:pt-[10%] px-[5%] md:pl-[20%] relative z-10 flex flex-col gap-3 text-white 
+                        items-center md:items-start text-center md:text-left">
+                
+                <div class="text-xs md:text-sm font-semibold bg-blue-800 w-fit px-2 py-1 text-center">Depuis 1956</div>
+                
+                <div class="text-4xl md:text-7xl font-bold">2N</div>
+                
+                <div class="text-4xl md:text-7xl font-bold">MULTI SERVICE</div>
+                
+                <a href="contact.html"
+                    class="mt-6 bg-blue-800 hover:bg-red-600 text-white font-medium py-3 px-4 md:pt-4 md:pb-5 md:px-6 
+                    text-lg md:text-xl w-[70%] md:w-[17%] text-center transition-all duration-500 ease-in-out transform hover:scale-105">
+                    Contacter-nous
                 </a>
             </div>
         </header>
@@ -80,11 +83,11 @@
 
                 <!-- Images empilées -->
                 <div class="py-6 relative w-[80%] h-auto">
-                <img src="../images/0F7A6564.jpg" alt="Firefighter 1"
+                <img src="../images/0F7A6564.jpg" alt=""
                     style="width: clamp(80px, 20vw, 256px);"
-                    class="h-auto rounded shadow-lg absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
+                    class="h-auto rounded shadow-lg absolute left-0 top-1/2 transform -translate-y-[30%] z-10">
 
-                <img src="../images/0F7A6951.jpg" alt="Firefighter 2"
+                <img src="../images/0F7A6951.jpg" alt=""
                     class="w-full h-auto rounded shadow-lg ml-20 scale-x-[-1]">
                 </div>
 
@@ -103,20 +106,20 @@
                 Notre mission : garantir la sécurité, l’hygiène et la performance de vos espaces, à travers une approche humaine, technologique et durable.
                 </p>
 
-                <div class="flex flex-wrap gap-12 mt-6" id="counter-section">
-                    <div>
+                <div class="flex flex-wrap gap-12 mt-6 justify-center" id="counter-section">
+                    <div class="text-center">
                         <p class="text-3xl font-bold text-blue-600 counter inline-block" data-target="150">0</p>
                         <p class="text-sm font-semibold text-gray-600 mt-1 uppercase">Agents de sécurité formés et opérationnels</p>
                     </div>
-                    <div>
+                    <div class="text-center">
                         <p class="text-3xl font-bold text-blue-600 counter inline-block" data-target="100">0</p>
                         <p class="text-sm font-semibold text-gray-600 mt-1 uppercase">Sites clients sécurisés et entretenus</p>
                     </div>
-                    <div>
+                    <div class="text-center">
                         <p class="text-3xl font-bold text-blue-600 counter inline-block" data-target="25">0</p>
                         <p class="text-sm font-semibold text-gray-600 mt-1 uppercase">Chiens dressés pour la sécurité cynophile</p>
                     </div>
-                    <div>
+                    <div class="text-center">
                         <p class="text-3xl font-bold text-blue-600 counter inline-block" data-target="15">0</p>
                         <p class="text-sm font-semibold text-gray-600 mt-1 uppercase">Experts incendie et SSIAP certifiés</p>
                     </div>
