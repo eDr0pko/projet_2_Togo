@@ -273,12 +273,6 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
-  .-top-1 {
-    top: calc(var(--spacing) * -1);
-  }
-  .-top-1\/2 {
-    top: calc(calc(1/2 * 100%) * -1);
-  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -414,8 +408,14 @@
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
   }
+  .ml-10 {
+    margin-left: calc(var(--spacing) * 10);
+  }
   .ml-20 {
     margin-left: calc(var(--spacing) * 20);
+  }
+  .ml-\[10\%\] {
+    margin-left: 10%;
   }
   .block {
     display: block;
@@ -464,6 +464,12 @@
   }
   .h-32 {
     height: calc(var(--spacing) * 32);
+  }
+  .h-\[5\%\] {
+    height: 5%;
+  }
+  .h-\[10\%\] {
+    height: 10%;
   }
   .h-\[15\%\] {
     height: 15%;
@@ -519,8 +525,17 @@
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
+  .w-\[1\%\] {
+    width: 1%;
+  }
+  .w-\[5\%\] {
+    width: 5%;
+  }
   .w-\[8\%\] {
     width: 8%;
+  }
+  .w-\[10\%\] {
+    width: 10%;
   }
   .w-\[15\%\] {
     width: 15%;
@@ -598,40 +613,8 @@
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .-translate-y-\[0\%\] {
-    --tw-translate-y: calc(0% * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-\[20\%\] {
-    --tw-translate-y: calc(20% * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-y-\[30\%\] {
     --tw-translate-y: calc(30% * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * 1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-1\/2 {
-    --tw-translate-y: calc(1/2 * 100%);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-\[0\%\] {
-    --tw-translate-y: 0%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-\[1\/2\] {
-    --tw-translate-y: 1/2;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-\[10\%\] {
-    --tw-translate-y: 10%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-\[20\%\] {
-    --tw-translate-y: 20%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .scale-100 {
@@ -1086,6 +1069,9 @@
   .pl-\[5\%\] {
     padding-left: 5%;
   }
+  .pl-\[10\%\] {
+    padding-left: 10%;
+  }
   .pl-\[20\%\] {
     padding-left: 20%;
   }
@@ -1363,6 +1349,14 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
+  }
+  .group-hover\:-translate-y-1 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-translate-y: calc(var(--spacing) * -1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
   }
   .group-hover\:-translate-y-2 {
     &:is(:where(.group):hover *) {

@@ -22,10 +22,10 @@
             </video>
 
             <!-- Container principal -->
-            <div class="flex flex-col md:flex-row justify-between items-center z-10 relative px-[3%] bg-black/20 backdrop-blur-sm py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center z-10 relative px-[3%] bg-black/20 backdrop-blur-sm">
 
                 <!-- Logo (masqué en mobile) -->
-                <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="hidden md:block w-[15%] h-[15%]" />
+                <img src="../images/LOGO 2N MULTI SERVICES.png" alt="logo" class="hidden md:block w-[5%] h-[5%] ml-[10%] py-2" />
 
                 <!-- Navbar -->
                 <section id="navbar" class="w-full md:w-auto mb-4 md:mb-0">
@@ -93,7 +93,7 @@
 
                 <!-- Texte et chiffres -->
                 <div class="py-6 text-gray-800">
-                <p class="text-sm uppercase tracking-widest text-yellow-600 font-bold mb-2">À propos de nous</p>
+                <p class="text-sm uppercase tracking-widest text-blue-600 font-bold mb-2">À propos de nous</p>
                 <h2 class="text-4xl font-extrabold leading-tight mb-4">Des solutions de sécurité, de propreté et de maintenance à la hauteur de vos exigences</h2>
                 <p class="text-gray-600 mb-6">
                 2N MULTI SERVICES est une entreprise togolaise innovante, spécialisée dans la sécurité humaine, la sécurité électronique, la sécurité incendie, la propreté et la maintenance professionnelle.
@@ -175,72 +175,73 @@
             <div class="max-w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
                 
                 <!-- Carte 1 -->
-                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg">
+                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg flex items-center justify-center">
 
-                <!-- Image zoomable -->
-                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                    <!-- Image zoomable -->
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                         style="background-image: url('../images/0F7A6474-Modifier.jpg');"></div>
 
-                <!-- Overlay sombre -->
-                <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+                    <!-- Overlay sombre -->
+                    <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
 
-                <!-- Texte animé -->
-                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center text-white px-4 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-105 z-10">
-                    <h3 class="text-xl font-bold">Forces de Sécurité Privée</h3>
-                    <p class="text-sm">Sécurité & Gardiennage / Sécurité Cynophile / Surveillance Événementielle</p>
-                </div>
+                    <!-- Texte centré animé -->
+                    <div class="relative z-10 text-center text-white px-4 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-105">
+                        <h3 class="text-xl font-bold">Forces de Sécurité Privée</h3>
+                        <p class="text-sm">Sécurité & Gardiennage / Sécurité Cynophile / Surveillance Événementielle</p>
+                    </div>
                 </a>
 
                 <!-- Carte 2 -->
-                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg">
+                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg flex items-center justify-center">
 
-                <!-- Image zoomable -->
-                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                    <!-- Image zoomable -->
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                         style="background-image: url('../images/0F7A6750-Modifier.jpg');"></div>
 
-                <!-- Overlay sombre -->
-                <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+                    <!-- Overlay sombre -->
+                    <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
 
-                <!-- Texte animé -->
-                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center text-white px-4 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-105 z-10">
-                    <h3 class="text-xl font-bold">SÉCURITÉ INCENDIE</h3>
-                    <p class="text-sm">Prévention & Intervention / Solutions Techniques / Équipements de Lutte contre le Feu / Formation & Évacuation / Maintenance & Vérification</p>
-                </div>
+                    <!-- Texte centré animé -->
+                    <div class="relative z-10 text-center text-white px-4 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-105">
+                        <h3 class="text-xl font-bold">SÉCURITÉ INCENDIE</h3>
+                        <p class="text-sm">Prévention & Intervention / Solutions Techniques / Équipements de Lutte contre le Feu / Formation & Évacuation / Maintenance & Vérification</p>
+                    </div>
                 </a>
 
                 <!-- Carte 3 -->
-                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg">
+                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg flex items-center justify-center">
 
-                <!-- Image zoomable -->
-                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                    <!-- Image zoomable -->
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                         style="background-image: url('../images/0F7A6873.jpg');"></div>
 
-                <!-- Overlay sombre -->
-                <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+                    <!-- Overlay sombre -->
+                    <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
 
-                <!-- Texte animé -->
-                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center text-white px-4 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-105 z-10">
-                    <h3 class="text-xl font-bold">NETTOYAGE & PROPRETÉ</h3>
-                    <p class="text-sm">Nettoyage Professionnel & Industriel / Désinfection & Traitement / Nettoyage de Fin de Chantier</p>
-                </div>
+                    <!-- Texte centré animé -->
+                    <div class="relative z-10 text-center text-white px-4 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-105">
+                        <h3 class="text-xl font-bold">NETTOYAGE & PROPRETÉ</h3>
+                        <p class="text-sm">Nettoyage Professionnel & Industriel / Désinfection & Traitement / Nettoyage de Fin de Chantier</p>
+                    </div>
                 </a>
 
                 <!-- Carte 4 -->
-                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg">
+                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg flex items-center justify-center">
 
-                <!-- Image zoomable -->
-                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                    <!-- Image zoomable -->
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                         style="background-image: url('../images/0F7A6773.jpg');"></div>
 
-                <!-- Overlay sombre -->
-                <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+                    <!-- Overlay sombre -->
+                    <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
 
-                <!-- Texte animé -->
-                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center text-white px-4 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-105 z-10">
-                    <h3 class="text-xl font-bold">SÉCURITÉ ÉLECTRONIQUE</h3>
-                    <p class="text-sm">Vidéosurveillance Intelligente / Contrôle d’Accès / Détection & Prévention Incendie / Alarmes Anti-Intrusion</p>
-                </div>
+                    <!-- Texte centré animé -->
+                    <div class="relative z-10 text-center text-white px-4 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-105">
+                        <h3 class="text-xl font-bold">SÉCURITÉ ÉLECTRONIQUE</h3>
+                        <p class="text-sm">Vidéosurveillance Intelligente / Contrôle d’Accès / Détection & Prévention Incendie / Alarmes Anti-Intrusion</p>
+                    </div>
                 </a>
+
 
             </div>
         </section>
