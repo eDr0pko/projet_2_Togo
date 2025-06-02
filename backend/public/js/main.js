@@ -6,7 +6,7 @@ const sections = {
     "securite-gardiennage": [""],
     "securite-incendie": [""],
     "surveillance-evenementielle": [""],
-    "services": ["Services"],
+    "services": ["Services", "Sécurité Privée", "Sécurité Incendie", "Nettoyage et Propreté", "Sécurité Électronique"],
     "offres": ["Offres", "Recrutement"],
     "contact": ["Contact"]
 };

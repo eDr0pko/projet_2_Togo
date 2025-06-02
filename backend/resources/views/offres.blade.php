@@ -107,103 +107,113 @@
             <hr class="relative z-10 h-px bg-white border-0 dark:bg-white" />
         </header>
 
-<main id="Offres" class="container mx-auto px-4 py-16">
-    <h2 id="Recrutement" 
-        class="text-4xl font-bold text-center text-blue-700 mb-12 animate-fade-in-up duration-700">
-        Nos Offres d’Emploi
-    </h2>
+        <main id="Offres" class="relative bg-gray-50 text-gray-800 py-16 px-4 sm:px-6 lg:px-8">
 
-    @if(session('success'))
-        <div class="bg-green-100 text-green-800 border border-green-400 px-4 py-3 rounded mb-6 animate-fade-in-down">
-            {{ session('success') }}
-        </div>
-    @endif
+            <!-- Section Header avec Logo -->
+            <div class="max-w-5xl mx-auto text-center mb-16">
+                <img src="{{ asset('images/LOGO 2N MULTI SERVICES.png') }}" alt="Logo 2N Multi Services"
+                    class="mx-auto h-20 md:h-24 mb-6 animate-fade-in-down">
+                <h2 id="Recrutement"
+                    class="text-4xl md:text-5xl font-extrabold text-blue-700 tracking-tight animate-fade-in-up">
+                    Nos Offres d’Emploi
+                </h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in-down">
+                    Rejoignez une entreprise dynamique et innovante où chaque talent compte.
+                </p>
+            </div>
 
-    @if ($offres->isEmpty())
-        <p class="text-center text-gray-500 text-lg animate-fade-in-down">Aucune offre disponible pour le moment.</p>
-    @else
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            @foreach ($offres as $offre)
-                <div class="group bg-white p-6 rounded-xl shadow-xl border border-blue-100 
-                            transform transition duration-300 hover:scale-105 hover:shadow-2xl
-                            animate-slide-up opacity-0">
-                    <div>
-                        <h3 class="text-2xl font-semibold text-blue-600 mb-2 group-hover:text-red-600 transition">
-                            {{ $offre->titre }}
-                        </h3>
-                        <p class="text-gray-700 text-sm leading-relaxed">{{ $offre->description }}</p>
-                    </div>
-                    <div class="mt-6 text-right">
-                        <a href="{{ route('offres.show', $offre->id) }}"
-                           class="inline-block bg-blue-600 hover:bg-red-600 text-white px-4 py-2 rounded-lg text-sm transition-all duration-300 ease-in-out">
-                            Postuler
-                        </a>
-                    </div>
+            <!-- Message de succès -->
+            @if(session('success'))
+                <div class="bg-green-100 text-green-800 border border-green-400 px-4 py-3 rounded mb-6 max-w-3xl mx-auto text-center animate-fade-in-down">
+                    {{ session('success') }}
                 </div>
-            @endforeach
-        </div>
-    @endif
-</main>
+            @endif
 
-<!-- ANIMATIONS (à placer en bas de la page) -->
-<script>
-    // Effet fade/slide quand les cartes entrent dans le viewport
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-fade-in-up');
-                entry.target.classList.remove('opacity-0');
+            <!-- Offres -->
+            @if ($offres->isEmpty())
+                <p class="text-center text-gray-500 text-lg animate-fade-in-down">
+                    Aucune offre disponible pour le moment.
+                </p>
+            @else
+                <div class="grid gap-10 md:grid-cols-2 max-w-5xl mx-auto">
+                    @foreach ($offres as $offre)
+                        <div class="group bg-white p-6 rounded-xl shadow-xl border border-blue-100 
+                                    transform transition duration-300 hover:scale-105 hover:shadow-2xl animate-slide-up opacity-0">
+                            <div class="flex flex-col justify-between h-full">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-blue-700 mb-2 group-hover:text-red-600 transition duration-300">
+                                        {{ $offre->titre }}
+                                    </h3>
+                                    <p class="text-gray-700 text-sm leading-relaxed">{!! nl2br(e($offre->description)) !!}</p>
+                                </div>
+                                <div class="mt-6 text-right">
+                                    <a href="{{ route('offres.show', $offre->id) }}"
+                                    class="inline-block bg-blue-600 hover:bg-red-600 text-white px-5 py-2 rounded-lg text-sm font-semibold shadow-md transition-all duration-300 ease-in-out">
+                                        Postuler →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            @endif
+        </main>
+
+        <!-- ANIMATIONS (à placer en bas du layout ou de la page) -->
+        <script>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in-up');
+                        entry.target.classList.remove('opacity-0');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.animate-slide-up').forEach(el => {
+                observer.observe(el);
+            });
+        </script>
+
+        <style>
+            @keyframes fade-in-up {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
-        });
-    }, {
-        threshold: 0.1
-    });
 
-    document.querySelectorAll('.animate-slide-up').forEach(el => {
-        observer.observe(el);
-    });
-</script>
+            @keyframes fade-in-down {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
 
-<!-- ANIMATIONS TAILWIND CUSTOM -->
-<style>
-    @keyframes fade-in-up {
-        0% {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+            .animate-fade-in-up {
+                animation: fade-in-up 0.6s ease-out forwards;
+            }
 
-    @keyframes fade-in-down {
-        0% {
-            opacity: 0;
-            transform: translateY(-20px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+            .animate-fade-in-down {
+                animation: fade-in-down 0.6s ease-out forwards;
+            }
 
-    .animate-fade-in-up {
-        animation: fade-in-up 0.6s ease-out forwards;
-    }
-
-    .animate-fade-in-down {
-        animation: fade-in-down 0.6s ease-out forwards;
-    }
-
-    .animate-slide-up {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.5s ease-out;
-    }
-</style>
-
-
+            .animate-slide-up {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 0.5s ease-out;
+            }
+        </style>
 
         <!-- Footer -->
         <footer class="bg-gray-900 text-white mt-20">

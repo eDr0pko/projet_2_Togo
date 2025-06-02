@@ -118,175 +118,193 @@
         <!-- Contenu principal -->
         <main id = "Services" class="w-full mx-auto space-y-16">
             <!-- Catégorie 1 -->
-            <section data-title="Forces de sécurité privée">
+            <section data-title="Forces de sécurité privée" id="sécurité privée">
                 
-                <div class="g-white rounded-xl px-[10%] shadow-lg p-6 hover:bg-blue-50 transition-all duration-300 cursor-pointer">
-                    <div class="flex flex-col md:flex-row items-start md:items-center gap-[4%]">
+                <!-- Catégorie 1 : Sécurité & Gardiennage -->
+                <a href="{{ url('/securite-gardiennage') }}" class="block">
+                    <div class="g-white rounded-xl px-[10%] shadow-lg p-6 hover:bg-blue-50 transition-all duration-300 cursor-pointer">
+                        <div class="flex flex-col md:flex-row items-start md:items-center gap-[4%]">
 
-                        <!-- Image à gauche -->
-                        <div class="w-full md:max-w-[700px] h-auto flex-shrink-0 overflow-hidden rounded-lg">
-                            <img src="../images/0F7A6497-Modifier.jpg" alt="Sécurité & Gardiennage" class="w-full h-full object-cover">
+                            <!-- Image à gauche -->
+                            <div class="w-full md:max-w-[700px] h-auto flex-shrink-0 overflow-hidden rounded-lg">
+                                <img src="../images/0F7A6497-Modifier.jpg" alt="Sécurité & Gardiennage" class="w-full h-full object-cover">
+                            </div>
+
+                            <!-- Contenu texte -->
+                            <div>
+                                <h1 class="text-4xl font-semibold text-gray-800 mb-2">Sécurité & Gardiennage</h1>
+                                <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
+                                La présence humaine reste essentielle pour une sécurité efficace. 2N MULTI SERVICES propose un gardiennage sur mesure adapté à vos besoins : surveillance de chantiers, immeubles, sites industriels ou résidentiels. 
+                                Nos agents, hautement formés, assurent des rondes régulières, une vigilance continue et une réponse rapide, avec possibilité de traçabilité électronique. Une sécurité humaine fiable, dissuasive et réactive.
+                                </p>
+                            </div>
+
                         </div>
-
-                        <!-- Contenu texte -->
-                        <div>
-                            <h1 class="text-4xl font-semibold text-gray-800 mb-2">Sécurité & Gardiennage</h1>
-                            <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
-                            La présence humaine reste essentielle pour une sécurité efficace. 2N MULTI SERVICES propose un gardiennage sur mesure adapté à vos besoins : surveillance de chantiers, immeubles, sites industriels ou résidentiels. 
-                            Nos agents, hautement formés, assurent des rondes régulières, une vigilance continue et une réponse rapide, avec possibilité de traçabilité électronique. Une sécurité humaine fiable, dissuasive et réactive.
-                            </p>
-                        </div>
-
                     </div>
-                </div>
+                </a>
 
-                <div class="bg-white rounded-xl px-[10%] shadow-lg p-6 hover:bg-blue-50 transition-all duration-300 cursor-pointer">
-                    <div class="flex flex-col md:flex-row-reverse items-start md:items-center gap-[4%]">
+                <!-- Catégorie 1 : Sécurité cynophile -->
+                <a href="{{ url('/securite-cynophile') }}" class="block">
+                    <div class="bg-white rounded-xl px-[10%] shadow-lg p-6 hover:bg-blue-50 transition-all duration-300 cursor-pointer">
+                        <div class="flex flex-col md:flex-row-reverse items-start md:items-center gap-[4%]">
 
-                        <!-- Image à droite -->
-                        <div class="w-full md:max-w-[700px] h-auto flex-shrink-0 overflow-hidden rounded-lg">
-                            <img src="../images/0F7A6721.jpg" alt="Sécurité cynophile" class="w-full h-full object-cover">
+                            <!-- Image à droite -->
+                            <div class="w-full md:max-w-[700px] h-auto flex-shrink-0 overflow-hidden rounded-lg">
+                                <img src="../images/0F7A6721.jpg" alt="Sécurité cynophile" class="w-full h-full object-cover">
+                            </div>
+
+                            <!-- Contenu texte -->
+                            <div>
+                                <h1 class="text-4xl font-semibold text-gray-800 mb-2">Sécurité cynophile</h1>
+                                <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
+                                Nos équipes cynophiles assurent la surveillance des sites sensibles grâce à un binôme maître-chien hautement qualifié.
+                                Les chiens, dressés pour la détection et la dissuasion, interviennent efficacement dans des environnements à haut risque ou isolés :
+                                sites industriels, chantiers nocturnes ou événements.
+                                Une vigilance renforcée pour une sécurité optimale.
+                                </p>
+                            </div>
+
                         </div>
-
-                        <!-- Contenu texte -->
-                        <div>
-                            <h1 class="text-4xl font-semibold text-gray-800 mb-2">Sécurité cynophile</h1>
-                            <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
-                            Nos équipes cynophiles assurent la surveillance des sites sensibles grâce à un binôme maître-chien hautement qualifié.
-                            Les chiens, dressés pour la détection et la dissuasion, interviennent efficacement dans des environnements à haut risque ou isolés :
-                            sites industriels, chantiers nocturnes ou événements.
-                            Une vigilance renforcée pour une sécurité optimale.
-                            </p>
-                        </div>
-
                     </div>
-                </div>
+                </a>
                 
 
-                <div class="bg-white rounded-xl px-[10%] shadow-lg p-6 hover:bg-blue-50 transition-all duration-300 cursor-pointer">
-                    <div class="flex flex-col md:flex-row items-start md:items-center gap-[4%]">
+                <!-- Catégorie 1 : Surveillance Événementielle -->
+                <a href="{{ url('/surveillance-evenementielle') }}" class="block">
+                    <div class="bg-white rounded-xl px-[10%] shadow-lg p-6 hover:bg-blue-50 transition-all duration-300 cursor-pointer">
+                        <div class="flex flex-col md:flex-row items-start md:items-center gap-[4%]">
 
-                        <!-- Image à gauche -->
-                        <div class="w-full md:max-w-[700px] h-auto flex-shrink-0 overflow-hidden rounded-lg">
-                            <img src="../images/0F7A6494-Modifier.jpg" alt="Surveillance Événementielle" class="w-full h-full object-cover">
+                            <!-- Image à gauche -->
+                            <div class="w-full md:max-w-[700px] h-auto flex-shrink-0 overflow-hidden rounded-lg">
+                                <img src="../images/0F7A6494-Modifier.jpg" alt="Surveillance Événementielle" class="w-full h-full object-cover">
+                            </div>
+
+                            <!-- Contenu texte -->
+                            <div>
+                                <h1 class="text-4xl font-semibold text-gray-800 mb-2">Surveillance Événementielle</h1>
+                                <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
+                                Nos agents assurent la sécurité de vos événements (concerts, conférences, festivals, soirées privées...) en garantissant un contrôle rigoureux des accès, une surveillance active des zones sensibles et une gestion fluide des flux de personnes.
+                                Une présence professionnelle et dissuasive pour un événement en toute sérénité.
+                                </p>
+                            </div>
+
                         </div>
-
-                        <!-- Contenu texte -->
-                        <div>
-                            <h1 class="text-4xl font-semibold text-gray-800 mb-2">Surveillance Événementielle</h1>
-                            <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
-                            Nos agents assurent la sécurité de vos événements (concerts, conférences, festivals, soirées privées...) en garantissant un contrôle rigoureux des accès, une surveillance active des zones sensibles et une gestion fluide des flux de personnes.
-                            Une présence professionnelle et dissuasive pour un événement en toute sérénité.
-                            </p>
-                        </div>
-
                     </div>
-                </div>
+                </a>
 
                 </div>
             </section>
 
             <!-- Catégorie 2 -->
-            <section data-title="Sécurité Incendie">
+            <section data-title="Sécurité Incendie" id="Sécurité Incendie">
                 <h2 id ="Sécurité-Incendie-bar" class=" bg-blue-600 text-white shadow-md p-4 text-5xl font-semibold text-center transition-colors duration-300 mt-4 mb-16">
                 Sécurité Incendie
                 </h2>
 
-                <div class="bg-white rounded-xl px-[10%] shadow-lg p-6 hover:bg-red-50 transition-all duration-300 cursor-pointer">
-                <div class="flex flex-col md:flex-row-reverse items-start md:items-center gap-[4%]">
+                <!-- Catégorie 2 : Sécurité Incendie -->
+                <a href="{{ url('/securite-incendie') }}" class="block">
+                    <div class="bg-white rounded-xl px-[10%] shadow-lg p-6 hover:bg-red-50 transition-all duration-300 cursor-pointer">
+                    <div class="flex flex-col md:flex-row-reverse items-start md:items-center gap-[4%]">
 
-                    <!-- Image à droite -->
-                    <div class="w-full md:max-w-[700px] h-auto flex-shrink-0 overflow-hidden rounded-lg">
-                        <img src="../images/0F7A6729.jpg" alt="Sécurité incendie" class="w-full h-full object-cover">
+                        <!-- Image à droite -->
+                        <div class="w-full md:max-w-[700px] h-auto flex-shrink-0 overflow-hidden rounded-lg">
+                            <img src="../images/0F7A6729.jpg" alt="Sécurité incendie" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Contenu texte -->
+                        <div>
+                            <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
+                                Protéger les personnes et les biens face au risque incendie est une priorité. 2N MULTI SERVICES vous propose
+                                des solutions globales : audit, prévention, équipements certifiés et agents SSIAP qualifiés.
+                            </p>
+                            <ul class="list-disc pl-10 text-gray-600 text-2xl md:text-2xl space-y-1 my-10">
+                                <li>Audit et analyse des risques</li>
+                                <li>Installation de détecteurs et systèmes d'alarme</li>
+                                <li>Agents SSIAP pour la prévention et l’intervention</li>
+                                <li>Formation à l’évacuation et à l’usage des extincteurs</li>
+                                <li>Maintenance régulière de vos équipements incendie</li>
+                            </ul>
+                        </div>
+
                     </div>
-
-                    <!-- Contenu texte -->
-                    <div>
-                        <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
-                            Protéger les personnes et les biens face au risque incendie est une priorité. 2N MULTI SERVICES vous propose
-                            des solutions globales : audit, prévention, équipements certifiés et agents SSIAP qualifiés.
-                        </p>
-                        <ul class="list-disc pl-10 text-gray-600 text-2xl md:text-2xl space-y-1 my-10">
-                            <li>Audit et analyse des risques</li>
-                            <li>Installation de détecteurs et systèmes d'alarme</li>
-                            <li>Agents SSIAP pour la prévention et l’intervention</li>
-                            <li>Formation à l’évacuation et à l’usage des extincteurs</li>
-                            <li>Maintenance régulière de vos équipements incendie</li>
-                        </ul>
                     </div>
-
-                </div>
-                </div>
+                </a>
 
             </section>
             <!-- Catégorie 3 -->
-            <section data-title="Nettoyage et Propreté">
+            <section data-title="Nettoyage et Propreté" id="Nettoyage et Propreté">
                 <h2 id ="Nettoyage-et-Propreté-bar" class=" bg-blue-600 text-white shadow-md p-4 text-5xl font-semibold text-center transition-colors duration-300 mt-4 mb-16">
                 Nettoyage et Propreté
                 </h2>
 
-                <div class="bg-white rounded-xl px-[10%] shadow-lg p-6 hover:bg-green-50 transition-all duration-300 cursor-pointer">
-                <div class="flex flex-col md:flex-row items-start md:items-center gap-[4%]">
+                <!-- Catégorie 3 : Nettoyage et Propreté -->
+                <a href="{{ url('/nettoyage-proprete') }}" class="block">
+                    <div class="bg-white rounded-xl px-[10%] shadow-lg p-6 hover:bg-green-50 transition-all duration-300 cursor-pointer">
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-[4%]">
 
-                    <!-- Image à gauche -->
-                    <div class="w-full md:max-w-[700px] h-auto flex-shrink-0 overflow-hidden rounded-lg">
-                    <img src="../images/0F7A6828-Modifier.jpg" alt="Nettoyage et Propreté" class="w-full h-full object-cover">
+                        <!-- Image à gauche -->
+                        <div class="w-full md:max-w-[700px] h-auto flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="../images/0F7A6828-Modifier.jpg" alt="Nettoyage et Propreté" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Contenu texte -->
+                        <div>
+                        <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
+                            Un environnement propre est essentiel au bien-être et à l’image de votre entreprise. 2N MULTI SERVICES propose des services de nettoyage professionnels, fiables et complets, adaptés à vos besoins spécifiques.
+                        </p>
+                        <ul class="list-disc pl-10 text-gray-600 text-2xl md:text-2xl space-y-1 my-10">
+                            <li>Nettoyage industriel : dépoussiérage, sols, vitres, collecte des déchets</li>
+                            <li>Désinfection & traitements : anti-bactérien, désinsectisation, dératisation</li>
+                            <li>Nettoyage de fin de chantier : remise en état, décapage, élimination des résidus</li>
+                        </ul>
+                        <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
+                            Nos équipes qualifiées interviennent avec rapidité, efficacité et respect des normes, pour vous garantir des espaces impeccables et durables.
+                        </p>
+                        </div>
+
                     </div>
-
-                    <!-- Contenu texte -->
-                    <div>
-                    <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
-                        Un environnement propre est essentiel au bien-être et à l’image de votre entreprise. 2N MULTI SERVICES propose des services de nettoyage professionnels, fiables et complets, adaptés à vos besoins spécifiques.
-                    </p>
-                    <ul class="list-disc pl-10 text-gray-600 text-2xl md:text-2xl space-y-1 my-10">
-                        <li>Nettoyage industriel : dépoussiérage, sols, vitres, collecte des déchets</li>
-                        <li>Désinfection & traitements : anti-bactérien, désinsectisation, dératisation</li>
-                        <li>Nettoyage de fin de chantier : remise en état, décapage, élimination des résidus</li>
-                    </ul>
-                    <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
-                        Nos équipes qualifiées interviennent avec rapidité, efficacité et respect des normes, pour vous garantir des espaces impeccables et durables.
-                    </p>
                     </div>
-
-                </div>
-                </div>
+                </a>
 
             </section>
 
             <!-- Catégorie 4 -->
-            <section data-title="Sécurité Électronique">
+            <section data-title="Sécurité Électronique" id="Sécurité Électronique">
                 <h2 id ="Sécurité-Électronique-bar" class=" bg-blue-600 text-white shadow-md p-4 text-5xl font-semibold text-center transition-colors duration-300 mt-4 mb-16">
                 Sécurité Électronique
                 </h2>
 
-                <div class="bg-white rounded-xl px-[10%] shadow-lg p-6 hover:bg-purple-50 transition-all duration-300 cursor-pointer">
-                <div class="flex flex-col md:flex-row-reverse items-start md:items-center gap-[4%]">
+                <!-- Catégorie 4 : Sécurité Électronique -->
+                <a href="{{ url('/securite-electronique') }}" class="block">
+                    <div class="bg-white rounded-xl px-[10%] shadow-lg p-6 hover:bg-purple-50 transition-all duration-300 cursor-pointer">
+                    <div class="flex flex-col md:flex-row-reverse items-start md:items-center gap-[4%]">
 
-                    <!-- Image à droite -->
-                    <div class="w-full md:max-w-[700px] h-auto flex-shrink-0 overflow-hidden rounded-lg">
-                    <img src="../images/0F7A6790.jpg" alt="Sécurité Électronique" class="w-full h-full object-cover">
+                        <!-- Image à droite -->
+                        <div class="w-full md:max-w-[700px] h-auto flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="../images/0F7A6790.jpg" alt="Sécurité Électronique" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Contenu texte -->
+                        <div>
+                        <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
+                            2N MULTI SERVICES vous propose des solutions de sécurité électronique performantes et sur mesure. Grâce à des technologies de pointe et une surveillance 24/7, nous assurons la protection continue de vos bâtiments, biens et personnes.
+                        </p>
+
+                        <ul class="list-disc pl-10 text-gray-600 text-2xl md:text-2xl space-y-1 my-10">
+                            <li>Vidéosurveillance HD, détection intelligente, accès à distance sécurisé</li>
+                            <li>Contrôle d’accès par badge, code, biométrie ou reconnaissance faciale</li>
+                            <li>Systèmes de détection incendie connectés et conformes aux normes</li>
+                            <li>Alarmes anti-intrusion avec alertes temps réel et réponse rapide</li>
+                        </ul>
+
+                        <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
+                            Nous vous accompagnons de l’audit à l’installation, avec maintenance, assistance et intégration sur mesure pour une sécurité fiable et durable.
+                        </p>
+                        </div>
+
                     </div>
-
-                    <!-- Contenu texte -->
-                    <div>
-                    <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
-                        2N MULTI SERVICES vous propose des solutions de sécurité électronique performantes et sur mesure. Grâce à des technologies de pointe et une surveillance 24/7, nous assurons la protection continue de vos bâtiments, biens et personnes.
-                    </p>
-
-                    <ul class="list-disc pl-10 text-gray-600 text-2xl md:text-2xl space-y-1 my-10">
-                        <li>Vidéosurveillance HD, détection intelligente, accès à distance sécurisé</li>
-                        <li>Contrôle d’accès par badge, code, biométrie ou reconnaissance faciale</li>
-                        <li>Systèmes de détection incendie connectés et conformes aux normes</li>
-                        <li>Alarmes anti-intrusion avec alertes temps réel et réponse rapide</li>
-                    </ul>
-
-                    <p class="text-gray-600 text-2xl md:text-2xl leading-relaxed text-justify">
-                        Nous vous accompagnons de l’audit à l’installation, avec maintenance, assistance et intégration sur mesure pour une sécurité fiable et durable.
-                    </p>
                     </div>
-
-                </div>
-                </div>
+                </a>
 
             </section>
         </main>

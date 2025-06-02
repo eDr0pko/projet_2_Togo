@@ -184,7 +184,7 @@
             <div class="max-w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
                 
                 <!-- Carte 1 -->
-                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg flex items-center justify-center">
+                <a href="/services#Sécurité Privée" class="relative group h-[500px] overflow-hidden shadow-lg flex items-center justify-center">
 
                     <!-- Image zoomable -->
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -201,7 +201,7 @@
                 </a>
 
                 <!-- Carte 2 -->
-                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg flex items-center justify-center">
+                <a href="/services#Sécurité Incendie" class="relative group h-[500px] overflow-hidden shadow-lg flex items-center justify-center">
 
                     <!-- Image zoomable -->
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -218,7 +218,7 @@
                 </a>
 
                 <!-- Carte 3 -->
-                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg flex items-center justify-center">
+                <a href="/services#Nettoyage et Propreté" class="relative group h-[500px] overflow-hidden shadow-lg flex items-center justify-center">
 
                     <!-- Image zoomable -->
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -235,7 +235,7 @@
                 </a>
 
                 <!-- Carte 4 -->
-                <a href="" class="relative group h-[500px] overflow-hidden shadow-lg flex items-center justify-center">
+                <a href="/services#Sécurité Électronique" class="relative group h-[500px] overflow-hidden shadow-lg flex items-center justify-center">
 
                     <!-- Image zoomable -->
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
